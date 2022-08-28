@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopVegan</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="/library/smartbasket/css/smartbasket.min.css">
+    <link rel="stylesheet" href="/css/media.css">
+</head>
+<body>
+
+    <div class="site" id="site">
+        
+        <header class="header" id="header">
+            <div class="container">
+        
+                <div class="header_inner">
+
+                    <button class="menu-burger">
+                        <img src="/img/menu.png">
+                    </button>
+
+                    <nav class="menu">
+                        <ul class="menu_list">
+                            <li class="menu_list-item">
+                                <a class="menu_list-link" href="/products.html">Товары</a>
+                                <img class="menu_arrow arrow" src="/img/arrow.png" alt="иконка стрелка">
+                                <ul class="submenu_list">
+                                    <li class="submenu_list-item">
+                                        <a class="submenu_list-link" href="/sweets.html">Сладости</a>
+                                    </li>
+                                    <li class="submenu_list-item">
+                                        <a class="submenu_list-link" href="/flour.html">Мука</a>
+                                    </li>
+                                    <li class="submenu_list-item">
+                                        <a class="submenu_list-link" href="/oils.html">Масла</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_list-item"><a class="menu_list-link" href="/delivery.html">Доставка и оплата</a></li>
+                            <li class="menu_list-item"><a class="menu_list-link" href="/contacts.html">Контакты</a></li>
+                            <li class="menu-burger_account">
+                                    <a href="/office.html">
+                                        <button class="btn-burger_account">
+                                            <img src="/img/user3.png" alt="user">
+                                            <span>Аккаунт</span>
+                                        </button>
+                                    </a>
+                            </li>
+                            <li class="nav_search menu-burger_search">
+                                <input type="text" class="menu-burger_search_text" id="search">
+                                <button class="menu-burger_search_btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                    <a class="logo" href="/index.html"><img src="/img/vegan-logo.jpg" alt="logo"></a>
+                    
+                    <nav class="menu">
+                        <div class="nav_search">
+                            <input type="text" class="nav_search_text" id="search">
+                            <button class="nav_search_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <a class="cart" href="#">
+                            <img src="/img/shopping-cart.png">
+                            <div class="cart-nombers">
+                            </div>
+                        </a>
+                        <div class="smart-basket__wrapper"></div>
+                        <a href="/office.html"><button class="account">
+                            <img src="/img/user.png" alt="user">
+                            <span>Аккаунт</span>
+                        </button></a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="container">
+                
+                <div class="content_page">
+                    <h2>Масла</h2>
+                    <img src="/img/leaf.png">
+                </div>
+
+                <div class="products-content grid-container">
+
+                    <ul class="products-grid">
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_oils1"><img src="/img/Oils/1.jpg" alt="Масло кукурузное Масляный Король, 350 мл"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_oils1">Масло кукурузное сыродавленное нерафинированное Масляный Король, 350 мл</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">17.40 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="10"
+                                    data-sb-product-name="Масло кукурузное сыродавленное нерафинированное Масляный Король, 350 мл"
+                                    data-sb-product-price="17.40"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/Oils/1.jpg">Добавить в корзину</button>        
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_oils2"><img src="/img/Oils/2.jpg" alt="Масло авокадо рафинированное Aroy-D, 500 мл"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_oils2">Масло авокадо рафинированное Aroy-D, 500 мл</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">53.29 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="11"
+                                    data-sb-product-name="Масло авокадо рафинированное Aroy-D, 500 мл"
+                                    data-sb-product-price="53.29"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/Oils/2.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_oils3"><img src="/img/Oils/3.jpg" alt="Масло грецкого ореха нерафинированное холодного отжима Belalea, 250 мл"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_oils3">Масло грецкого ореха нерафинированное холодного отжима Belalea, 250 мл</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">26.35 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="12"
+                                    data-sb-product-name="Масло грецкого ореха нерафинированное холодного отжима Belalea, 250 мл"
+                                    data-sb-product-price="26.35"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/Oils/3.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_oils4"><img src="/img/Oils/4.jpg" alt="Масло горчичное сыродавленное нерафинированное Масляный Король, 350 мл"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_oils4">Масло горчичное сыродавленное нерафинированное Масляный Король, 350 мл</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">13.99 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="13"
+                                    data-sb-product-name="Масло горчичное сыродавленное нерафинированное Масляный Король, 350 мл"
+                                    data-sb-product-price="13.99"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/Oils/4.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_oils5"><img src="/img/Oils/5.jpg" alt="Масло тыквенное нерафинированное холодного отжима Belalea, 250 мл"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_oils5">Масло тыквенное нерафинированное холодного отжима Belalea, 250 мл</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">25.20 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+                                
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="14"
+                                    data-sb-product-name="Масло тыквенное нерафинированное холодного отжима Belalea, 250 мл"
+                                    data-sb-product-price="25.20"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/Oils/5.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_oils6"><img src="/img/Oils/6.jpg" alt="Кокосовое масло Extra Virgin Aroy-D, 180 мл"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_oils6">Кокосовое масло Extra Virgin Aroy-D, 180 мл</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">19.23 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="15"
+                                    data-sb-product-name="Кокосовое масло Extra Virgin Aroy-D, 180 мл"
+                                    data-sb-product-price="19.23"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/Oils/6.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_oils7"><img src="/img/Oils/7.jpg" alt="Масло топленое Гхи Вастэко, 200 гр"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_oils7">Масло топленое Гхи Вастэко, 200 гр</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">28.13 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="16"
+                                    data-sb-product-name="Масло топленое Гхи Вастэко, 200 гр"
+                                    data-sb-product-price="28.13"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/Oils/7.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_oils8"><img src="/img/Oils/8.jpg" alt="Масло из семян черного тмина Житница здоровья, 100 мл"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_oils8">Масло из семян черного тмина Житница здоровья, 100 мл</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">29.99 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="17"
+                                    data-sb-product-name="Масло из семян черного тмина Житница здоровья, 100 мл"
+                                    data-sb-product-price="29.99"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/Oils/8.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_oils9"><img src="/img/Oils/9.jpg" alt="Какао масло UFEELGOOD, 200 гр"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_oils9">Какао масло UFEELGOOD, 200 гр</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">35.50 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="18"
+                                    data-sb-product-name="Какао масло UFEELGOOD, 200 гр"
+                                    data-sb-product-price="35.50"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/Oils/9.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+            </div>  
+        </main>
+
+        <div class="popup_card" id="popup_oils1">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/Oils/1.jpg" alt="Масло кукурузное картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Масло кукурузное сыродавленное нерафинированное Масляный Король, 350 мл</h2>
+                            <div class="popup_card-text">
+                                <p>Масло из зародышей кукурузы, как и сама кукуруза (или маис), пришло к нам от американских индейцев, которые почитали этот злак как дар богов. В России кукурузное масло называют "золотым". Масло кукурузное холодного отжима не только обладает нежным золотистым цветом, но и богато биологически активными веществами, вследствие чего оно и получило популярность в народной медицине.</p>
+                                <p><b>Объем:</b> 350 мл</p>
+                                <p><b>Производитель:</b> ООО Виктория</p>
+                                <p><b>Срок годности:</b> 12 месяцев</p>
+                                <p><b>Тара:</b>	стеклянная бутылка</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">17.40 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn" 
+                            data-sb-id-or-vendor-code="10"
+                            data-sb-product-name="Масло кукурузное сыродавленное нерафинированное Масляный Король, 350 мл"
+                            data-sb-product-price="17.40"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/Oils/1.jpg">Добавить в корзину</button>   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_oils2">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/Oils/2.jpg" alt="Масло авокадо картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Масло авокадо рафинированное Aroy-D, 500 мл</h2>
+                            <div class="popup_card-text">
+                                <p><b>Особенности масла авокадо:</b></p>
+                                <ol>
+                                    <li>
+                                        <p><b>Высокая точка дымления (smoke point)</b></p>
+                                        <p>Чем выше точка дымления масла, тем масло считается более устойчивым в условиях нагревания, варки и жарки.
+                                        Точка дымления масла авокадо самая высокая среди всех растительных масел холодного отжима.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Богатый вкус, чудесный аромат и тонкая густота </b></p>
+                                        <p>Масло авокадо имеет очень концентрированный вкус и текстуру — особенность, которая обеспечивает оптимальный результат при использовании небольшого количества масла, по сравнению с другими маслами. Масло имеет богатый ореховый вкус авокадо, подходящий к любому блюду или рагу, как заправка к салатам, мясу, рыбе.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Хранение</b></p>
+                                        <p>Долго хранится при комнатной температуре.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Для заправки для салатов</b></p>
+                                        <p>Немного масла авокадо улучшит вкус любого салата и сделает его более полезным. Нежный вкус, в котором совсем не чувствуется присутствие масла.
+                                        Использование одной ложки масла авокадо эквивалентно 3 столовым ложкам другого масла.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Для запекания и жарки</b></p>
+                                        <p>В отличие от других масел масло авокадо не сгорает с началом готовки, можно готовить мясо и овощи в течение долгого времени, сохранить вкус мяса и сократить рабочий процесс. Из-за высокого уровня хлорофилла в масле цвет соуса в конце жарки получается насыщенным, свежим и зеленым.</p>
+                                    </li>
+                                </ol>
+                                <p><b>Состав:</b> 100% масло авокадо, рафинированное.</p>
+                                <p><b>Производитель:</b> Thai Agri Fooda Public Company Limited. 155/1 Moo 1 TheParak Road, Tambol Bangsaothong, Amphur Bangsaothong, Samutprakarn 10570, Тайланд</p>
+                                <p><b>Пищевая ценность (на 100 гр):</b> Белки - 0 г, Жиры -100 г, Углеводы - 0 г. </p>
+                                <p><b>Энергетическая ценность:</b> 900 кКал / 3700 кДж</p>
+                                <p><b>Условия хранения:</b>	Хранить при температуре от +6°C до +32°C в сухом защищенном от прямых солнечных лучей месте. Рекомендации по хранению. Продукт может затвердевать при температуре ниже +7°C без потери качества. Консистенция продукта становится жидкой через 15-20 минут при комнатной температуре. После вскрытия хранить в холодильнике.</p>
+                                <p><b>Срок годности:</b> 18 месяцев.</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">53.29 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                            data-sb-id-or-vendor-code="11"
+                            data-sb-product-name="Масло авокадо рафинированное Aroy-D, 500 мл"
+                            data-sb-product-price="53.29"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/Oils/2.jpg">Добавить в корзину</button>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_oils3">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/Oils/3.jpg" alt="Масло грецкого ореха картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Масло грецкого ореха нерафинированное холодного отжима Belalea, 250 мл</h2>
+                            <div class="popup_card-text">
+                                <p>Масло получено методом однократного холодного отжима, что позволяет сохранить максимальное количество полезных веществ. Оно имеет янтарный цвет и мягкий вкус без терпкости.</p>
+                                <p><b>Масло грецкого ореха содержит:</b></p>
+                                <ol>
+                                    <li>витамины группы B (B1, B2, B3, B6, B9)</li>
+                                    <li>витамины А, С, Е, К, Р</li>
+                                    <li>йод, железо, кальций, селен, цинк, фосфор, магний, кобальт, медь</li>
+                                    <li>Омега-3 (15%), Омега-6 (49%), Омега-9 (24%)</li>
+                                    <li>насыщенные жирные кислоты (стеариновая 5%, пальмитиновая 7%)</li>
+                                    <li>коэнзим Q10</li>
+                                    <li>фитостерины</li>
+                                    <li>каротиноиды</li>
+                                    <li>фосфолипиды</li>
+                                </ol>
+                                <p><b>Полезные свойства масла:</b></p>
+                                <ol>
+                                    <li>оздоравливает желудочно-кишечный тракт, способствует заживлению язв</li>
+                                    <li>оказывает благоприятное действие на сердечно-сосудистую систему</li>
+                                    <li>нормализует обменные процессы в организме</li>
+                                    <li>нормализует артериальное давление</li>
+                                    <li>снижает уровень сахара в крови</li>
+                                    <li>снимает усталость, нормализует сон</li>
+                                    <li>увеличивает умственную работоспособность</li>
+                                    <li>мягко очищает почки</li>
+                                    <li>снижает риск возникновения онкологический заболеваний</li>
+                                    <li>хорошее профилактическое средство от гриппа и простуды</li>
+                                    <li>способствует заживлению ожогов, ран, трещин</li>
+                                    <li>помогает при лечении псориаза и экземы</li>
+                                    <li>усиливает лактацию, улучшает пищевую ценность молока</li>
+                                </ol>
+                                <p><b>Противопоказания:</b></p>
+                                <p>Не рекомендуется употреблять масло при индивидуальной непереносимости, при высокой температуре, а также во время обострения гастрита, язвы желудка и двенадцатиперстной кишки.</p>
+                                <p><b>Как употреблять?</b></p>
+                                <p>В кулинарии масло грецкого ореха используется для приготовления заправок для салатов, для холодных соусов, десертов. Можно приготовить маринад для мяса, а также полезный бутерброд, пропитав любимый хлеб небольшим количеством масла.</p>
+                                <p>В косметологии масло используют для обогащения кремов, масок и бальзамов. Можно его использовать и в чистом виде особенно при уходе за сухой, чувствительной кожей, для укрепления волос и ногтей.</p>
+                                <p><b>Состав:</b> 100% нерафинированное масло грецкого ореха</p>
+                                <p><b>Пищевая ценность (на 100 гр):</b> Белки - 0,15г; углеводы - 0г; жиры - 99,6г</p>
+                                <p><b>Производитель:</b> ООО"Белалея" РБ Минская обл., г.Клецк ул.Казарменная 8</p>
+                                <p><b>Срок годности:</b> 6 месяцев</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">26.35 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn" 
+                            data-sb-id-or-vendor-code="12"
+                            data-sb-product-name="Масло грецкого ореха нерафинированное холодного отжима Belalea, 250 мл"
+                            data-sb-product-price="26.35"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/Oils/3.jpg">Добавить в корзину</button>   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_oils4">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/Oils/4.jpg" alt="Масло горчичное картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Масло горчичное сыродавленное нерафинированное Масляный Король, 350 мл</h2>
+                            <div class="popup_card-text">
+                                <p>Масло получено методом однократного холодного отжима, что позволяет сохранить максимальное количество полезных веществ.</p>
+                                <p><b>Горчичное масло содержит:</b></p>
+                                <ol>
+                                    <li>витамина А, В3, В4, В6, D, E, K, P</li>
+                                    <li>фитонциды, фитостеролы</li>
+                                    <li>хлорофилл</li>
+                                    <li>эфирное горчичное масло</li>
+                                    <li>ненасыщенные и полинасыщенные жирные кислоты</li>
+                                </ol>
+                                <p><b>Полезные свойства:</b></p>
+                                <ol>
+                                    <li>обладает бактерицидными и антисептическими свойствами</li>
+                                    <li>улучшает работу сердечно-сосудистой системы</li>
+                                    <li>нормализует жировой обмен</li>
+                                    <li>укрепляет иммунитет</li>
+                                    <li>поддерживает гормональный баланс</li>
+                                    <li>нейтрализует вредное влияние солей тяжелых металлов, радионуклидов, токсинов и шлаков на организм человека</li>
+                                    <li>улучшает состояние кожи</li>
+                                </ol>
+                                <p><b>Противопоказания:</b></p>
+                                <p>необходимо с осторожность принимать масло при гастритах с повышенной кислотностью, энтероколитах, язве желудка и 12-перстной кишки. Может вызывать аллергические реакции при чувствительной кожи.</h4>
+                                <p><b>Как употреблять?</b></p>
+                                <p>Горчичное масло можно использовать для приготовления салатов, тушения овощей, для приготовления мясных и рыбных блюд</p>
+                                <p>В косметологии масло используется для ухода за кожей лица и тела, а также для укрепления и оздоровления волос.</p>
+                                <p><b>Состав:</b> Масло из семян горчицы</p>
+                                <p><b>Пищевая ценность (на 100 гр):</b> Жиры: 99,8 г. Энергетическая ценность - 898 кКал</p>
+                                <p><b>Производитель:</b> ООО "Виктория", Россия, 173016, Великий Новгород, Космонавтов, 14-7</p>
+                                <p><b>Условия хранения:</b> Хранить при температуре от 5 до 25С. После вскрытия хранить в темной прохладном месте в плотно закрытой бутылке</p>
+                                <p><b>Срок годности:</b> 12 месяцев</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">13.99 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                            data-sb-id-or-vendor-code="13"
+                            data-sb-product-name="Масло горчичное сыродавленное нерафинированное Масляный Король, 350 мл"
+                            data-sb-product-price="13.99"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/Oils/4.jpg">Добавить в корзину</button>   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_oils5">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/Oils/5.jpg" alt="Масло тыквенное картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Масло тыквенное нерафинированное холодного отжима Belalea, 250 мл</h2>
+                            <div class="popup_card-text">
+                                <p>Используется в косметологии, как добавка к питанию, для лечения и профилактики заболеваний. Масло тыквы насыщено жирными кислотами, омега-3, омега-6, омега-9, содержит витамины группы А, В1, В2, В4, В9, С, Е, К, РР, кроме этого присутствуют минеральные вещества, аминокислоты, калий, кальций, фосфор, цинк, селен, железо, магний, фтор, йод.</p>
+                                <p><b>Применение:</b></p>
+                                <ol>
+                                    <li>восстановление пищеварительной системы;</li>
+                                    <li>избавление от лишнего веса;</li>
+                                    <li>укрепление иммунитета;</li>
+                                    <li>коррекция зрения;</li>
+                                    <li>защита сердечно-сосудистой системы;</li>
+                                    <li>лечение кожных заболеваний;</li>
+                                    <li>повышение репродуктивной функции;</li>
+                                    <li>при пищевой аллергии;</li>
+                                    <li>борьба с перхотью, сыпью;</li>
+                                </ol>
+                                <p><b>Состав:</b> Натуральное масло семян тыквы, нерафинированное, холодного отжима.</p>
+                                <p><b>Пищевая ценность (на 100 гр):</b> Жиры 99.8 г. Энергетическая ценность: 898 ккал / 3694 кДж</p>
+                                <p><b>Производитель:</b> ООО "Белалея", 222531, Минская обл., г. Клецк, ул. Казарменная, д. 8, хран. 21, пом. 2, РБ.</p>
+                                <p><b>Срок годности:</b> 9 месяцев</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">25.20 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                            data-sb-id-or-vendor-code="14"
+                            data-sb-product-name="Масло тыквенное нерафинированное холодного отжима Belalea, 250 мл"
+                            data-sb-product-price="25.20"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/Oils/5.jpg">Добавить в корзину</button>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_oils6">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/Oils/6.jpg" alt="Кокосовое масло Extra Virgin Aroy-D, 180 мл"></div>
+                        <div class="popup_card-description">
+                            <h2>Кокосовое масло Extra Virgin Aroy-D, 180 мл</h2>
+                            <div class="popup_card-text">
+                                <p>Кокосовое масло Extra Virgin AROY-D - отличная альтернатива сливочному или растительному маслу. Великолепное дополнение к Вашим любимым напиткам и десертам. Это масло можно использовать не только на кухне, оно также является отличным косметическим средством! Подходит для снятия макияжа, в качестве средства для ухода за волосами или увлажняющего средства для кожи.</p>
+                                <p><b>Состав:</b> 100% кокосовое масло первого холодного отжима.</p>
+                                <p><b>Пищевая ценность (на 100 гр):</b> белки - 0 г, жиры - 100 г, углеводы - 0 г</p>
+                                <p><b>Энергетическая ценность:</b> 900 ккал</p>
+                                <p><b>Условия хранения:</b> 24 месяца при условии хранения в плотно закрытой таре в темном месте при температуре от +15 С до +30 С</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">19.23 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                            data-sb-id-or-vendor-code="15"
+                            data-sb-product-name="Кокосовое масло Extra Virgin Aroy-D, 180 мл"
+                            data-sb-product-price="19.23"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/Oils/6.jpg">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_oils7">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/Oils/7.jpg" alt="Масло топленое Гхи картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Масло топленое Гхи Вастэко, 200 гр</h2>
+                            <div class="popup_card-text">
+                                <p><b>Гхи</b> – это продукт термической обработки коровьего сливочного масла. В результате этой процедуры из масла полностью удаляется вода, а также молочные сахара, белки, как легкие, так и тяжелые.</p>
+                                <p>Жирность гхи составляет не менее 99,0%, на оставшийся процент приходятся витамины и минералы: витамин А, железо, калий, магний, натрий, фосфор. Кроме того, топленое масло содержит сопряженную линолевую кислоту – полезное соединение, которое отвечает за восстановление клеток и тканей организма.</p>
+                                <p><b>В чем уникальность топленого масла гхи и почему его нужно потреблять?</b></p>
+                                <ol>
+                                    <li>Отличное средство для восстановления иммунитета как взрослого человека, так и ребенка;</li>
+                                    <li>Мощнейший катализатор, усиливающий в 7 раз силу целебных компонентов принимаемых с этим маслом;</li>
+                                    <li>Прекрасное средство от стрессов (антидепрессант) и хронической усталости;</li>
+                                    <li>Активизирует работу головного мозга;</li>
+                                    <li>Крайне эффективный способ омоложения всего организма и восстановления энергии;</li>
+                                    <li>Активизирует процессы пищеварения в организме;</li>
+                                    <li>Улучшает цвет кожи и отлично борется с морщинами (при наружном применении);</li>
+                                    <li>Масло гхи является более питательным и, как показали исследования, если его употреблять в умеренном количестве, не повышает уровень холестерина в крови.</li>
+                                </ol>
+                                <p><b>Применение масла гхи:</b></p>
+                                <ol>
+                                    <li>масло добавляют в гарниры, каши;</li>
+                                    <li>прекрасно подходит для жарки и выпечки (т.к. не выделяет канцерогены);</li>
+                                    <li>для улучшения пищеварения рекомендуется рассасывать по 1 чайной ложке 2-3 раза в день;</li>
+                                    <li>для укрепления иммунитета;</li>
+                                    <li>при стрессах и хронической усталости;</li>
+                                    <li>помогает при простудных заболеваниях;</li>
+                                    <li>при наружном применении масло улучшает цвет кожи, убирает раздражения, отлично борется с мелкими морщинками.</li>
+                                </ol>
+                                <p><b>Состав:</b> изготовлено из высококачественного натурального сливочного масла.</p>
+                                <p><b>Изготовитель:</b> ООО "ВАСТЭКО Партнерс", Нижний Новгород</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">28.13 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                            data-sb-id-or-vendor-code="16"
+                            data-sb-product-name="Масло топленое Гхи Вастэко, 200 гр"
+                            data-sb-product-price="28.13"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/Oils/7.jpg">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_oils8">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/Oils/8.jpg" alt="Масло из семян черного тмина картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Масло из семян черного тмина Житница здоровья, 100 мл</h2>
+                            <div class="popup_card-text">
+                                <p>Много в нём бета-каротина, кальция, железа, меди и других макро и микроэлементов, витаминов, особенно А, Е и D, аминокислот, флаваноидов, фитостеролов, дубильных веществ, эфирных масел.</p>
+                                <p><b>Полезные свойства масла чёрного тмина(калинджи):</b></p>
+                                <ol>
+                                    <li>укрепляет сердечно-сосудистой системы;</li>
+                                    <li>устраняет изжоги отрыжки, колики и брожения;</li>
+                                    <li>активизурует функционирования жулудочно-кишечного тракта;</li>
+                                    <li>положительно влияет на кровообращение;</li>
+                                    <li>улучшает пищеварение не раздражая слизистую желудка;</li>
+                                    <li>улучшает работу печени и почек;</li>
+                                    <li>помогает сбросить лишний вес.</li>
+                                </ol>
+                                <p><b>В домашней кулинарии:</b></p>
+                                <p>Масло чёрного тмина (калиджи) - по вкусу напоминает и перец, и землянику, и мускатный орех одновременно, весьма разнообразно. Используют в арабской, египетской и индийской кухнях. В Индии добавляют в овощные блюда , в блюда из бобовых ириса, в тесто. Отлично подходит для заправки овощных салатов. Для ароматизации сладких блюд. </p>
+                                <p><b>Состав:</b> 100% масло семян чёрного тмина (калинджи).</p>
+                                <p><b>Пищевая ценность (на 100 гр):</b> Белки - 0 г; Жиры - 99,9 г; Углеводы - 0 г.</p>
+                                <p><b>Энергетическая ценность:</b> 929 кКал/3889 кДЖ.</p>
+                                <p><b>Условия хранения:</b> Хранить в сухом месте от +1С до +25С и влажности не более 70%.</p>
+                                <p><b>Срок годности:</b> 12 месяцев.</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">29.99 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                            data-sb-id-or-vendor-code="17"
+                            data-sb-product-name="Масло из семян черного тмина Житница здоровья, 100 мл"
+                            data-sb-product-price="29.99"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/Oils/8.jpg">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_oils9">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/Oils/9.jpg" alt="ККакао масло картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Какао масло UFEELGOOD, 200 гр</h2>
+                            <div class="popup_card-text">
+                                <p>Какао масло производят из жира, выжатого из какао бобов. Благодаря своему богатому составу: кофеину, витамину А, танинам, жирным кислотам, этот продукт получил широчайшее применение и в современной косметологии.</p>
+                                <p><b>Полезные свойства какао масла:</b></p>
+                                <ol>
+                                    <li>Понижает риск возникновения сердечных-сосудистых недугов;</li>
+                                    <li>Обладает тонизирующим и заживляющим действием;</li>
+                                    <li>Эффективно при лечении ожогов, высыпаниях на коже и на шершавых участках кожи;</li>
+                                    <li>Уменьшает растяжки на коже;</li>
+                                    <li>При постоянном употреблении снижает риск возникновения онкологических заболеваний;</li>
+                                    <li>Хорошо увлажняет, улучшает синтез коллагена;</li>
+                                    <li>Улучшает цвет кожи, омолаживает изнутри.</li>
+                                </ol>
+                                <p><b>Противопоказания и побочные эффекты при употреблении какао масла:</b></p>
+                                <ol>
+                                    <li>Запрещено употреблять при наличии аллергических реакций;</li>
+                                    <li>Не рекомендовано при излишней возбудимости и бессонице;</li>
+                                    <li>Необходимо ограничивать потребление продукта при избыточном весе и низкокалорийный диетах;</li>
+                                </ol>
+                                <p><b>Состав:</b> Какао масло холодного отжима</p>
+                                <p><b>Пищевая ценность (на 100 гр):</b> Белок: 0,3 г Жиры: 99,1 г Углеводы: 0,3 г Пищевые волокна: меньше 0,1 г</p>
+                                <p><b>Энергетическая ценность:</b> 894 кКал</p>
+                                <p><b>Условия хранения:</b> Хранить в сухом, прохладном месте при температуре не выше 25&degС</p>
+                                <p><b>Срок годности:</b> 15 мес. с момента даты производства</p>
+                                <p><b>Производитель:</b> «Nutrisure Ltd», North Barn, Manor Farm Buildings, Southstoke, Bath, BA2 7DW, United Kingdom of Great Britan and Northern Ireland, Соединенное Королевство Великобритании и Северной Ирландии.</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">35.50 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                            data-sb-id-or-vendor-code="18"
+                            data-sb-product-name="Какао масло UFEELGOOD, 200 гр"
+                            data-sb-product-price="35.50"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/Oils/9.jpg">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer_inner">
+                    <div class="footer_info">
+                        <a href="/index.html"><img src="/img/vegan-logo_footer.png" alt="logo"></a>
+                        <p> ИП Спиридонов Андрей Андреевич</br>
+                            УНП 192770026</br>
+                            Свидетельство о государственной регистрации выдано Минским горисполкомом 6 февраля 2017 г.</br>
+                            Юридический адрес: РБ, г. Минск</br>
+                            Ул. Притыцкого 92-59</br>
+                            Р/С BY58 ALFA 3013 2793 9400 1027 0000</br>
+                            ЗАО "АЛЬФА-БАНК"</br>
+                            Юридический адрес: Ул. Сурганова, 43-47, 220013 Минск</p>
+                    </div>
+                    <div class="footer-block">
+                       <nav class="footer_menu">
+                            <h4>Меню сайта:</h4>
+                            <a class="footer_menu-link" href="/products.html">Товары</a></li>
+                            <a class="footer_menu-link" href="/delivery.html">Доставка и оплата</a>
+                            <a class="footer_menu-link" href="/contacts.html">Контакты</a>
+                        </nav>
+                        <div class="footer_social">
+                            <div class="footer_social-link">
+                                <h4>Мы в сети:</h4>
+                                <p>Email: <a class="footer_social-email" href="mailto:oyasim@email.com">oyasim@email.com</a></p>
+                            </div>
+                            <div class="footer_social-list">
+                                <a class="facebook" href="https://www.facebook.com/" target="_blank"><img src="/img/facebook.png"></a>
+                                <a class="twitter" href="https://twitter.com/" target="_blank"><img src="/img/twitter.png"></a>
+                                <a class="instagram" href="https://www.instagram.com/" target="_blank"><img src="/img/instagram.png"></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </footer> 
+
+    </div>
+
+    <!-- Подключаем библиотеку jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/library/smartbasket/js/smartbasket.min.js"></script>
+    <script src="/js/product.js"></script>
+    <script src="/js/script.js"></script>
+
+</body>
+</html>

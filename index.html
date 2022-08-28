@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopVegan</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/library/smartbasket/css/smartbasket.min.css">
+    <link rel="stylesheet" href="/css/media.css">
+
+
+
+</head>
+<body>
+
+    <div class="site" id="site">
+
+        <header class="header" id="header">
+            <div class="container">
+        
+                <div class="header_inner">
+
+                    <button class="menu-burger">
+                        <img src="/img/menu.png">
+                    </button>
+
+                    <nav class="menu">
+                        <ul class="menu_list">
+                            <li class="menu_list-item">
+                                <a class="menu_list-link" href="/products.html">Товары</a>
+                                <img class="menu_arrow arrow" src="/img/arrow.png" alt="иконка стрелка">
+                                <ul class="submenu_list">
+                                    <li class="submenu_list-item">
+                                        <a class="submenu_list-link" href="/sweets.html">Сладости</a>
+                                    </li>
+                                    <li class="submenu_list-item">
+                                        <a class="submenu_list-link" href="/flour.html">Мука</a>
+                                    </li>
+                                    <li class="submenu_list-item">
+                                        <a class="submenu_list-link" href="/oils.html">Масла</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_list-item"><a class="menu_list-link" href="/delivery.html">Доставка и оплата</a></li>
+                            <li class="menu_list-item"><a class="menu_list-link" href="/contacts.html">Контакты</a></li>
+                            <li class="menu-burger_account">
+                                    <a href="/office.html">
+                                        <button class="btn-burger_account">
+                                            <img src="/img/user3.png" alt="user">
+                                            <span>Аккаунт</span>
+                                        </button>
+                                    </a>
+                            </li>
+                            <li class="nav_search menu-burger_search">
+                                <input type="text" class="menu-burger_search_text" id="search">
+                                <button class="menu-burger_search_btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                    <a class="logo" href="#"><img src="/img/vegan-logo.jpg" alt="logo"></a>
+                    
+                    <nav class="menu">
+                        <div class="nav_search">
+                            <input type="text" class="nav_search_text" id="search">
+                            <button class="nav_search_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <a class="cart" href="#">
+                            <img src="/img/shopping-cart.png">
+                            <div class="cart-nombers">
+                            </div>
+                        </a>
+                        <div class="smart-basket__wrapper"></div>
+                        <a href="/office.html"><button class="account">
+                            <img src="/img/user.png" alt="user">
+                            <span>Аккаунт</span>
+                        </button></a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="slider">
+                    <div class="slider_item">
+                        <a href="#"><img src="/img/banner.jpg" alt="banner"></a>
+                    </div>
+                    <div class="slider_item">
+                        <a href="/sweets.html"><img src="/img/banner_popkorn.jpg" alt="banner"></a>
+                    </div>
+                    <div class="slider_item">
+                        <a href="/sweets.html"><img src="/img/bionic.png" alt="banner"></a>
+                    </div>
+                    <div class="slider_item">
+                        <a href="/sweets.html"><img src="/img/banner_bombar.png" alt="banner"></a>
+                    </div>
+                    <div class="slider_item">
+                        <a href="/sweets.html"><img src="/img/fitforce.png" alt="banner"></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="stocks">
+            <div class="container">
+                <h2>Акционные товары</h2>
+                <img class="leaf" src="/img/leaf.png">
+
+                <div class="slider_products">
+                    <div class="products-grid_item">
+                        <article class="product">
+                            <div class="image_switch_img">
+                                <a href="#popup_stocks1"><img src="/img/stocks/1.jpg" alt="Кокосовое молоко Aroy-D, 500 мл"></a>
+                            </div>
+                            <h3 class="product_title">
+                                <a href="#popup_stocks1">Кокосовое молоко Aroy-D, 500 мл</a>
+                            </h3>
+                            <div class="product_price">
+                                <span class="product-price_current">10 p.</span>
+                                <span class="product-price_old">12.69 p.</span>
+                            </div>
+
+                            <div class="product__quantity"></div>
+
+                            <button class="product_btn btn" 
+                                data-sb-id-or-vendor-code="30"
+                                data-sb-product-name="Кокосовое молоко Aroy-D, 500 мл"
+                                data-sb-product-price="10.0"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/stocks/1.jpg">Добавить в корзину</button>        
+                        </article>
+                    </div>
+
+                    <div class="products-grid_item">
+                        <article class="product">
+                            <div class="image_switch_img">
+                                <a href="#popup_stocks2"><img src="/img/stocks/2.jpg" alt="Арахисовая паста Nutbutter"></a>
+                            </div>
+                            <h3 class="product_title">
+                                <a href="#popup_stocks2">Арахисовая паста Nutbutter (классическая), 320гр</a>
+                            </h3>
+                            <div class="product_price">
+                                <span class="product-price_current">15 p.</span>
+                                <span class="product-price_old">18.67 p.</span>
+                            </div>
+
+                            <div class="product__quantity"></div>
+
+                            <button class="product_btn btn" 
+                                data-sb-id-or-vendor-code="31"
+                                data-sb-product-name="Арахисовая паста Nutbutter (классическая), 320гр"
+                                data-sb-product-price="15.0"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/stocks/2.jpg">Добавить в корзину</button>        
+                        </article>
+                    </div>
+
+                    <div class="products-grid_item">
+                        <article class="product">
+                            <div class="image_switch_img">
+                                <a href="#popup_stocks3"><img src="/img/stocks/3.jpg" alt="Напиток растительный «Грецкий орех» ультрапастеризованный Тake a Bite"></a>
+                            </div>
+                            <h3 class="product_title">
+                                <a href="#popup_stocks3">Напиток растительный «Грецкий орех» ультрапастеризованный Тake a Bite, 1л</a>
+                            </h3>
+                            <div class="product_price">
+                                <span class="product-price_current">14.32 p.</span>
+                                <span class="product-price_old">16.85 p.</span>
+                            </div>
+
+                            <div class="product__quantity"></div>
+
+                            <button class="product_btn btn" 
+                                data-sb-id-or-vendor-code="32"
+                                data-sb-product-name="Напиток растительный «Грецкий орех» ультрапастеризованный Тake a Bite, 1л"
+                                data-sb-product-price="14.32"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/stocks/3.jpg">Добавить в корзину</button>        
+                        </article>
+                    </div>
+
+                    <div class="products-grid_item">
+                        <article class="product">
+                            <div class="image_switch_img">
+                                <a href="#popup_stocks4"><img src="/img/stocks/4.jpg" alt="Квадры Bitey (овсяно-фруктовый батончик)"></a>
+                            </div>
+                            <h3 class="product_title">
+                                <a href="#popup_stocks4">Квадры Bitey (овсяно-фруктовый батончик) "черная смородина", 30 гр</a>
+                            </h3>
+                            <div class="product_price">
+                                <span class="product-price_current">2.87 p.</span>
+                                <span class="product-price_old">3.59 p.</span>
+                            </div>
+
+                            <div class="product__quantity"></div>
+
+                            <button class="product_btn btn" 
+                                data-sb-id-or-vendor-code="33"
+                                data-sb-product-name="Квадры Bitey (овсяно-фруктовый батончик) 'черная смородина', 30 гр"
+                                data-sb-product-price="2.87"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/stocks/4.jpg">Добавить в корзину</button>        
+                        </article>
+                    </div>
+
+                    <div class="products-grid_item">
+                        <article class="product">
+                            <div class="image_switch_img">
+                                <a href="#popup_stocks5"><img src="/img/stocks/5.jpg" alt="Макароны цельнозерновые пшеничные"></a>
+                            </div>
+                            <h3 class="product_title">
+                                <a href="#popup_stocks5">Макароны цельнозерновые пшеничные "Перья", 350 гр</a>
+                            </h3>
+                            <div class="product_price">
+                                <span class="product-price_current">3.50 p.</span>
+                                <span class="product-price_old">4.05 p.</span>
+                            </div>
+
+                            <div class="product__quantity"></div>
+
+                            <button class="product_btn btn" 
+                                data-sb-id-or-vendor-code="34"
+                                data-sb-product-name="Макароны цельнозерновые пшеничные 'Перья', 350 гр"
+                                data-sb-product-price="3.50"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/stocks/5.jpg">Добавить в корзину</button>        
+                        </article>
+                    </div>
+
+                    <div class="products-grid_item">
+                        <article class="product">
+                            <div class="image_switch_img">
+                                <a href="#popup_stocks6"><img src="/img/stocks/6.jpg" alt="Орех кедровый Сибирский кедр, 200 гр"></a>
+                            </div>
+                            <h3 class="product_title">
+                                <a href="#popup_stocks6">Орех кедровый Сибирский кедр, 200 гр</a>
+                            </h3>
+                            <div class="product_price">
+                                <span class="product-price_current">35.50 p.</span>
+                                <span class="product-price_old">38.99 p.</span>
+                            </div>
+
+                            <div class="product__quantity"></div>
+
+                            <button class="product_btn btn" 
+                                data-sb-id-or-vendor-code="35"
+                                data-sb-product-name="Орех кедровый Сибирский кедр, 200 гр"
+                                data-sb-product-price="35.50"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/stocks/6.jpg">Добавить в корзину</button>        
+                        </article>
+                    </div>
+                </div>
+
+                <div class="popup_card" id="popup_stocks1">
+                    <a href="#header" class="popup_area"></a>
+                    <div class="popup_card-body">
+                        <div class="popup_card-content products-grid_item">
+                            <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                            <div class="popup_card-info">
+                                <div class="popup_card-image"><img src="/img/stocks/1.jpg" alt="Кокосовое молоко Aroy-D"></div>
+                                <div class="popup_card-description">
+                                    <h2>Кокосовое молоко Aroy-D, 500 мл</h2>
+                                    <div class="popup_card-text">
+                                        <p>Именно в кокосовой мякоти содержатся все витамины, минералы и аминокислоты, за которые орех так ценится. А кокосовое молоко позволяет получать их нашему организму в таком виде, в каком захочется.</p>
+                                        <p>Молоко из мякоти кокоса от Aroy-D можно добавлять в тесто для кондитерских изделий, в супы, в соусы для мяса и рыбы, в мороженое и крема. И быть уверенным, что это будет, не только вкусно, но и передаст всю пользу от кокосового ореха в наш организм.</p>
+                                        <p><b>Способ употребления:</b> Молоко из мякоти кокоса от Aroy-D можно добавлять в тесто для кондитерских изделий, в супы, в соусы для мяса и рыбы, в мороженое и крема. И быть уверенным, что это будет не только вкусно, но и передаст всю пользу от кокосового ореха в наш организм.</p>
+                                        <p><b>Пищевая ценность в 100 мл продукта:</b> Белки - 1,6 г, Жиры - 19 г, Углеводы - 2 г. Энергетическая ценность: 185 кКал / 764 кДж</p>
+                                        <p><b>Состав:</b> Мякоть кокосового ореха 70%, вода 29,99%, эмульгатор Е435 0,01%</p>
+                                        <p><b>Условия хранения:</b> Хранить при комнатной температуре +2°C до +30°C. Перед употреблением взболтать. После вскрытия хранить не более 2 дней в холодильнике. Чтобы восстановить оригинальную текстуру после охлаждения, поместить банку с продуктом в емкость с горячей водой на 5-10 минут и перемешать.</p>
+                                        <p><b>Срок годности:</b> 17 месяцев.</p>
+                                        <p><b>Изготовитель:</b> Thai Agri Fooda Public Company Limited. 155/1 Moo 1 TheParak Road, Tambol Bangsaothong, Amphur Bangsaothong, Samutprakarn 10570, Тайланд.</p>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                            <div class="popup_card-price">
+                                <div class="product-price_current">10.0 p.</div>
+                                <div class="product__quantity"></div>
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="30"
+                                    data-sb-product-name="Кокосовое молоко Aroy-D, 500 мл"
+                                    data-sb-product-price="10.0"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/stocks/1.jpg">Добавить в корзину</button> 
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup_card" id="popup_stocks2">
+                    <a href="#header" class="popup_area"></a>
+                    <div class="popup_card-body">
+                        <div class="popup_card-content products-grid_item">
+                            <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                            <div class="popup_card-info">
+                                <div class="popup_card-image"><img src="/img/stocks/2.jpg" alt="Арахисовая паста Nutbutter"></div>
+                                <div class="popup_card-description">
+                                    <h2>Арахисовая паста Nutbutter (классическая), 320гр</h2>
+                                    <div class="popup_card-text">
+                                        <p><b>Полезные свойства арахисовой пасты:</b></p>
+                                            <p>- Источник растительного белка</p>
+                                            <p>- Низкоуглеводный источник энергии</p>
+                                            <p>- Снижает уровень холестерина в крови</p>
+                                            <p>- Снижает нервную возбудимость</p>
+                                        <p><b>Как употреблять арахисовую пасту?</b></p>
+                                        <p>Намазывайте арахисовую пасту на хлебцы или тосты, добавляйте в сэндвичи, в кашу или готовьте на её основе соусы, печенье и другие кондитерские изделия. Попробовать стоит и классический рецепт: смажьте один кусочек тоста арахисовой пастой, а второй джемом или вареньем и сложите их вместе!</p>
+                                        <p><b>Пищевая ценность в 100 мл продукта:</b> Белок: 24 г Жиры: 50 г Углеводы: 22 г Энергетическая ценность – 588 кКал.</p>
+                                        <p><b>Состав:</b> Арахис жареный</p>
+                                        <p><b>Условия хранения:</b> Хранить в сухом, прохладном месте при температуре не выше 25С и относительной влажности воздуха 65-75%.</p>
+                                        <p><b>Срок годности:</b> 6 мес. с момента даты производства.</p>
+                                        <p><b>Изготовитель:</b> ИП Серова Л.Д.109029 г.Москва, Автомобильный проезд, д.8с6.</p>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                            <div class="popup_card-price">
+                                <div class="product-price_current">15.0 p.</div>
+                                <div class="product__quantity"></div>
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="31"
+                                    data-sb-product-name="Арахисовая паста Nutbutter (классическая), 320гр"
+                                    data-sb-product-price="15.0"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/stocks/2.jpg">Добавить в корзину</button> 
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup_card" id="popup_stocks3">
+                    <a href="#header" class="popup_area"></a>
+                    <div class="popup_card-body">
+                        <div class="popup_card-content products-grid_item">
+                            <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                            <div class="popup_card-info">
+                                <div class="popup_card-image"><img src="/img/stocks/3.jpg" alt="Напиток растительный «Грецкий орех»"></div>
+                                <div class="popup_card-description">
+                                    <h2>Напиток растительный «Грецкий орех» ультрапастеризованный Тake a Bite, 1л</h2>
+                                    <div class="popup_card-text">
+                                        <p>Линейка насыщенного орехового молока с добавлением витаминов и протеина.</p>
+                                        <p><b>Особенности линейки:</b></p>
+                                            <p>- Насыщенный ореховый вкус</p>
+                                            <p>- Обащено витаминами витаминами B, B12, Ca, D</p>
+                                            <p>- Без добавленного сахара и искусственных ароматизаторов и консервантов</p>
+                                        <p><b>Как употреблять?</b></p>
+                                        <p>Молоко можно употреблять как самостоятельный продукт, добавлять в каши и мюсли, использовать для приготовления смузи и коктейлей.</p>
+                                        <p><b>Пищевая ценность в 100 мл продукта:</b> Белки - 7,0 гр., Жиры - 1,5 гр., Углеводы - 6,0 гр. Энергетическая ценность: 40 кКал/167,4 кДж.</p>
+                                        <p><b>Состав:</b> Вода, рис длиннозерный, грецкий орех (паста, орех), масло подсолнечное высокоолеиновое холодного отжима, витаминно-минеральный премикс (витамин D2, витамин В2 (рибофлавин), витамин В12, кальций (трикальций фосфат, карбонат кальция)), соль морская, натуральный ароматизатор, стабилизатор: каррагинан из водорослей</p>
+                                        <p><b>Условия хранения:</b> После вскрытия хранить закрытым в холодильнике и употребить в течение 3-4 дней.</p>
+                                        <p><b>Срок годности:</b> 12 месяцев.</p>
+                                        <p><b>Изготовитель:</b> Продукт разработан лабораторией ООО "БиоФудЛаб" 111250, Россия, г.Москва, ул.Красноказарменная д.15, стр.1 Изготовитель: Ctra. de Vic, Km. 1,23, 17406 VILADRAU (Gi) Spain/Испания.</p>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                            <div class="popup_card-price">
+                                <div class="product-price_current">14.32 p.</div>
+                                <div class="product__quantity"></div>
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="32"
+                                    data-sb-product-name="Напиток растительный «Грецкий орех» ультрапастеризованный Тake a Bite, 1л"
+                                    data-sb-product-price="14.32"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/stocks/3.jpg">Добавить в корзину</button> 
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup_card" id="popup_stocks4">
+                    <a href="#header" class="popup_area"></a>
+                    <div class="popup_card-body">
+                        <div class="popup_card-content products-grid_item">
+                            <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                            <div class="popup_card-info">
+                                <div class="popup_card-image"><img src="/img/stocks/4.jpg" alt="Квадры Bitey (овсяно-фруктовый батончик)"></div>
+                                <div class="popup_card-description">
+                                    <h2>Квадры Bitey (овсяно-фруктовый батончик) 'черная смородина', 30 гр</h2>
+                                    <div class="popup_card-text">
+                                        <p>Благодаря сбалансированному составу они помогут быстро уталить голод и насытить организм энергией натуральных фруктов, ягод и злаков.</p>
+                                        <p>В упаковке Вы найдете две порции десерта в форме квадратиков. Квадры удобно брать с собой на прогулку или тренировку.</p>
+                                        <p>Специальная технология производства и уникальная упаковка позволяют сохранить все полезные свойства, микроэлементы, витамины без использования консервантов.</p>
+                                        <p>Продукт не содержит сахара, сои и красителей.</p>
+                                        <p><b>Пищевая ценность (на 30 гр):</b> Белки: 2,0 г., Жиры: 2,8 г., Углеводы: 21,6.</p>
+                                        <p><b>Энергетическая ценность:</b> 119,7 кКал.</p>
+                                        <p><b>Состав:</b> Изюм, мука овсяная, масло подсолнечное, сок черносмородиновый концентрированный, сок яблочный концентрированный, ароматизатор натуральный "Черная смородина".</p>
+                                        <p><b>Условия хранения:</b> Хранить при температуре до 25 С и относительной влажности воздуха не более 75%.</p>
+                                        <p><b>Срок годности:</b> 6 месяцев.</p>
+                                        <p><b>Изготовитель:</b> ООО "БиоФудЛаб",123022, г. Москва, ул. Рочдельская, дом 15, строение 104, Российская Федерация.</p>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                            <div class="popup_card-price">
+                                <div class="product-price_current">2.87 p.</div>
+                                <div class="product__quantity"></div>
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="33"
+                                    data-sb-product-name="Квадры Bitey (овсяно-фруктовый батончик) 'черная смородина', 30 гр"
+                                    data-sb-product-price="2.87"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/stocks/4.jpg">Добавить в корзину</button>  
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup_card" id="popup_stocks5">
+                    <a href="#header" class="popup_area"></a>
+                    <div class="popup_card-body">
+                        <div class="popup_card-content products-grid_item">
+                            <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                            <div class="popup_card-info">
+                                <div class="popup_card-image"><img src="/img/stocks/5.jpg" alt="Макароны цельнозерновые пшеничные"></div>
+                                <div class="popup_card-description">
+                                    <h2>Макароны цельнозерновые пшеничные 'Перья', 350 гр</h2>
+                                    <div class="popup_card-text">
+                                        <p>Макароны богаты витаминами и минералами, а также ценной клетчаткой, которая стимулирует работу кишечника. Регулярное употребление цельнозерновых продуктов способствует профилактике сердечно-сосудистых заболеваний, развитию диабета и ожирения.</p>
+                                        <p><b>Пищевая ценность (на 100 гр):</b> Белки: 12,3 г Жиры:2,6 г Углеводы: 74,1 г, Пищевые волокна 8,8 г.</p>
+                                        <p><b>Энергетическая ценность:</b> 372 кКал, 1562 кДж.</p>
+                                        <p><b>Состав:</b> Мука пшеничная цельнозерновая.</p>
+                                        <p><b>Условия хранения:</b> Хранить в сухом прохладном месте</p>
+                                        <p><b>Срок годности:</b> 18 месяцев</p>
+                                        <p><b>Изготовитель:</b> ООО "Всем на пользу", РФ, 107497, г.Москва, ул.Иркутская д.11, корп.4</p>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                            <div class="popup_card-price">
+                                <div class="product-price_current">3.50 p.</div>
+                                <div class="product__quantity"></div>
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="34"
+                                    data-sb-product-name="Макароны цельнозерновые пшеничные 'Перья', 350 гр"
+                                    data-sb-product-price="3.50"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/stocks/5.jpg">Добавить в корзину</button>  
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup_card" id="popup_stocks6">
+                    <a href="#header" class="popup_area"></a>
+                    <div class="popup_card-body">
+                        <div class="popup_card-content products-grid_item">
+                            <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                            <div class="popup_card-info">
+                                <div class="popup_card-image"><img src="/img/stocks/6.jpg" alt="Орех кедровый Сибирский кедр"></div>
+                                <div class="popup_card-description">
+                                    <h2>Орех кедровый Сибирский кедр, 200 гр</h2>
+                                    <div class="popup_card-text">
+                                        <p>Покупая кедровый орех от «Сибирского кедра», вы можете быть уверены в качестве продукта. Мы собираем орехи за сотни километров от промышленных предприятий в густых кедровых лесах Сибири и Алтая.</p>
+                                        <p>Орешки проходят 6 стадий проверки — от ручной переборки до радиационного контроля в современной лаборатории. Для сохранения всех полезных свойств применяем правильную упаковку, которая защищает продукт.</p>
+                                        <p>Кедровые орешки незаменимы для гурманов, вегетарианцев и сыроедов. Содержащихся в них веществ достаточно для удовлетворения суточной потребности организма взрослого человека в аминокислотах и таких дефицитных микроэлементах, как медь, кобальт, марганец и цинк. Белки кедрового ореха легко усваиваются и отличаются повышенным содержанием аминокислот, среди которых преобладает аргинин. Аргинин важен для развития растущего организма, поэтому кедровый орех обязателен в рационе детей и беременных женщин.</p>
+                                        <p><b>Пищевая ценность (на 100 гр):</b> Белки - 16 г. Жиры - 56 г. Углеводы - 24 г.</p>
+                                        <p><b>Энергетическая ценность:</b> 660кКал/2750кДж.</p>
+                                        <p><b>Состав:</b> Орех кедровый</p>
+                                        <p><b>Срок годности:</b> 12 месяцев</p>
+                                        <p><b>Изготовитель:</b> ООО "Эко-фабрика Сибирский кедр", Томская обл., д.Петрово, ул.Луговая, 11, Россия.</p>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                            <div class="popup_card-price">
+                                <div class="product-price_current">35.50 p.</div>
+                                <div class="product__quantity"></div>
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="35"
+                                    data-sb-product-name="Орех кедровый Сибирский кедр, 200 гр"
+                                    data-sb-product-price="35.50"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/stocks/6.jpg">Добавить в корзину</button>  
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="delivery">
+            <div class="container">
+                
+                <div class="delivery_block">
+        
+                    <div class="delivery_title">
+                        <div class="delivery-heading">
+                            <h2>Фермерские эко-продукты с доставкой на дом</h2>
+                            <p>Мы сократили путь между производителями и покупателями, чтобы на вашем столе были только самые свежие продукты</p>
+                        </div>
+        
+                        <div class="delivery_courier">
+                            <div class="delivery_icon">
+                                <img src="/img/Vector.png" alt="Иконка курьера">
+                            </div>
+                            <div class="delivery-description">
+                                <h3>Быстрая доставка</h3>
+                                <p>Среднее время доставки по Минску - 45 минут</p> 
+                            </div> 
+                        </div>
+        
+                        <div class="delivery_menezhder">
+                            <div class="delivery_icon">
+                                <img src="/img/Vector2.png" alt="Иконка список">
+                            </div>
+                            <div class="delivery-description">
+                                <h3>Служба онлайн-заказов</h3>
+                                <p>Оформите заказ в корзине. Наш менеджер свяжется с вами, уточнив информацию по заказу</p> 
+                            </div>
+                        </div>
+        
+                        <div class="delivery_clock">
+                            <div class="delivery_icon">
+                                <img src="/img/Vector3.png" alt="Иконка часы">
+                            </div>
+                            <div class="delivery-description">
+                                <h3>Обслуживание 24/7</h3>
+                                <p>Мы будем рядом 24/7, как онлайн, так и в Контакт-центре. Больше нет необходимости ждать начала рабочего дня. Нам важно, чтобы у каждого клиента была возможность позвонить или написать  (чат на сайте, viber-бот, telegram-бот) и решить возникшие проблемы или оформить заказ вне зависимости от времени суток. Приветливые специалисты смогут ответить на все интересующие вопросы по телефонам.</p> 
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="delivery_background">
+                        <img src="/img/7.png" alt="Доставка"> 
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="popular">
+            <div class="container">
+                <h2>Популярные товары</h2>
+                <img src="/img/leaf.png">
+                <div class="slider_products">
+
+                    <div class="products-grid_item">
+                        <article class="product">
+                            <div class="image_switch_img">
+                                <a href="#popup_popular1"><img src="/img/popular/1.jpg" alt="Печенье безглютеновое Bitey"></a>
+                            </div>
+                            <h3 class="product_title">
+                                <a href="#popup_popular1">Печенье безглютеновое Bitey "Клубника", 125 гр</a>
+                            </h3>
+                            <div class="product_price">
+                                <span class="product-price_current">8.15 p.</span>
+                            </div>
+
+                            <div class="product__quantity"></div>
+
+                            <button class="product_btn btn" 
+                                data-sb-id-or-vendor-code="36"
+                                data-sb-product-name="Печенье безглютеновое Bitey 'Клубника', 125 гр"
+                                data-sb-product-price="8.15"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/popular/1.jpg">Добавить в корзину</button>        
+                        </article>
+                    </div>
+
+                    <div class="products-grid_item">
+                        <article class="product">
+                            <div class="image_switch_img">
+                                <a href="#popup_popular2"><img src="/img/popular/2.jpg" alt="Горький шоколад с гречишным чаем"></a>
+                            </div>
+                            <h3 class="product_title">
+                                <a href="#popup_popular2">Горький шоколад с гречишным чаем Nature's own factory, 20 гр</a>
+                            </h3>
+                            <div class="product_price">
+                                <span class="product-price_current">6.50 p.</span>
+                            </div>
+
+                            <div class="product__quantity"></div>
+
+                            <button class="product_btn btn" 
+                                data-sb-id-or-vendor-code="37"
+                                data-sb-product-name="Горький шоколад с гречишным чаем Nature's own factory, 20 гр"
+                                data-sb-product-price="6.50"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/popular/2.jpg">Добавить в корзину</button>        
+                        </article>
+                    </div>
+
+                    <div class="products-grid_item">
+                        <article class="product">
+                            <div class="image_switch_img">
+                                <a href="#popup_popular3"><img src="/img/popular/3.jpg" alt="Пастила фруктовая Фрутоежка"></a>
+                            </div>
+                            <h3 class="product_title">
+                                <a href="#popup_popular3">Пастила фруктовая Фрутоежка, 500 гр</a>
+                            </h3>
+                            <div class="product_price">
+                                <span class="product-price_current">18.89 p.</span>
+                            </div>
+
+                            <div class="product__quantity"></div>
+
+                            <button class="product_btn btn" 
+                                data-sb-id-or-vendor-code="38"
+                                data-sb-product-name="Пастила фруктовая Фрутоежка, 500 гр"
+                                data-sb-product-price="18.89"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/popular/3.jpg">Добавить в корзину</button>        
+                        </article>
+                    </div>
+
+                    <div class="products-grid_item">
+                        <article class="product">
+                            <div class="image_switch_img">
+                                <a href="#popup_popular4"><img src="/img/popular/4.jpg" alt="Хлебцы хрустящие кукурузно-рисовые с морской солью Bite"></a>
+                            </div>
+                            <h3 class="product_title">
+                                <a href="#popup_popular4">Хлебцы хрустящие кукурузно-рисовые с морской солью Bite, 150 гр</a>
+                            </h3>
+                            <div class="product_price">
+                                <span class="product-price_current">8.05 p.</span>
+                            </div>
+
+                            <div class="product__quantity"></div>
+
+                            <button class="product_btn btn" 
+                                data-sb-id-or-vendor-code="39"
+                                data-sb-product-name="Хлебцы хрустящие кукурузно-рисовые с морской солью Bite, 150 гр"
+                                data-sb-product-price="8.05"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/popular/4.jpg">Добавить в корзину</button>        
+                        </article>
+                    </div>
+
+                    <div class="products-grid_item">
+                        <article class="product">
+                            <div class="image_switch_img">
+                                <a href="#popup_popular5"><img src="/img/popular/5.jpg" alt="Напиток Кокосово-рисовый"></a>
+                            </div>
+                            <h3 class="product_title">
+                                <a href="#popup_popular5">Напиток "Кокосово-рисовый" ультрапастеризованный Barista Bite, 1 л</a>
+                            </h3>
+                            <div class="product_price">
+                                <span class="product-price_current">17.79 p.</span>
+                            </div>
+
+                            <div class="product__quantity"></div>
+
+                            <button class="product_btn btn" 
+                                data-sb-id-or-vendor-code="40"
+                                data-sb-product-name="Напиток 'Кокосово-рисовый' ультрапастеризованный Barista Bite, 1 л"
+                                data-sb-product-price="17.79"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/popular/5.jpg">Добавить в корзину</button>        
+                        </article>
+                    </div>
+
+                    <div class="products-grid_item">
+                        <article class="product">
+                            <div class="image_switch_img">
+                                <a href="#popup_popular6"><img src="/img/popular/6.jpg" alt="Гималайская розовая соль крупного помола"></a>
+                            </div>
+                            <h3 class="product_title">
+                                <a href="#popup_popular6">Гималайская розовая соль крупного помола UFEELGOOD, 200 гр</a>
+                            </h3>
+                            <div class="product_price">
+                                <span class="product-price_current">14.15 p.</span>
+                            </div>
+
+                            <div class="product__quantity"></div>
+
+                            <button class="product_btn btn" 
+                                data-sb-id-or-vendor-code="41"
+                                data-sb-product-name="Гималайская розовая соль крупного помола UFEELGOOD, 200 гр"
+                                data-sb-product-price="14.15"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/popular/6.jpg">Добавить в корзину</button>        
+                        </article>
+                    </div>
+
+                </div>
+
+                <div class="popup_card" id="popup_popular1">
+                    <a href="#header" class="popup_area"></a>
+                    <div class="popup_card-body">
+                        <div class="popup_card-content products-grid_item">
+                            <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                            <div class="popup_card-info">
+                                <div class="popup_card-image"><img src="/img/popular/1.jpg" alt="Печенье безглютеновое Bitey"></div>
+                                <div class="popup_card-description">
+                                    <h2>Печенье безглютеновое Bitey 'Клубника', 125 гр</h2>
+                                    <div class="popup_card-text">
+                                        <p>Печенье имеет нежный вкус, не содержит сахара, глютена и консервантов.</p>
+                                        <p>В каждой упаковке печенье имеет форму определенной тематики: космос, животные, морской мир, динозавры.</p>
+                                        <p>Фигурки изображены на упаковке в виде персонажей, которые можно выдавить по контору и с помощью подставки разместить на столе.</p>
+                                        <p><b>Пищевая ценность в 100 мл продукта:</b> Белок: 3,5 г, Жиры: 17,7 г, Углеводы: 65,1 г. Пищевые волокна 1,9 г. Кальций 320 мг. Витамин В5 4,0 мг. Витамин В6 1,0 мг. Энергетическая ценность – 437 кКал.</p>
+                                        <p><b>Состав:</b> Рисовая мука, кокосовое масло, кукурузный крахмал, сок клубничный, финиковый сироп, порошок свекольный, порошок яблочный, сода пищевая, карбонат кальция (источник альция), соль, ароматизатор натуральный "Клубника", витамины (В5, В6).</p>
+                                        <p><b>Условия хранения:</b> Хранить при температуре от 0 до 25 С и относительной влажности воздуха не более 75%.</p>
+                                        <p><b>Срок годности:</b> 12 месяцев, срок хранения открытой упаковки не более 3-х недель.</p>
+                                        <p><b>Изготовитель:</b> ЗАО "Пищекомбинат клинский" 141600, Россия, Московская область, г.Солнечногорск, ул.Обуховская д.7/24 Изготовитель расфасованного продукта: ООО "БиоФудЛаб",123022, г. Москва, ул. Рочдельская, дом 15, строение 104, Российская Федерация</p>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                            <div class="popup_card-price">
+                                <div class="product-price_current">8.15 p.</div>
+                                <div class="product__quantity"></div>
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="36"
+                                    data-sb-product-name="Печенье безглютеновое Bitey 'Клубника', 125 гр"
+                                    data-sb-product-price="8.15"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/popular/1.jpg">Добавить в корзину</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup_card" id="popup_popular2">
+                    <a href="#header" class="popup_area"></a>
+                    <div class="popup_card-body">
+                        <div class="popup_card-content products-grid_item">
+                            <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                            <div class="popup_card-info">
+                                <div class="popup_card-image"><img src="/img/popular/2.jpg" alt="Горький шоколад с гречишным чаем"></div>
+                                <div class="popup_card-description">
+                                    <h2>Горький шоколад с гречишным чаем Nature's own factory, 20 гр</h2>
+                                    <div class="popup_card-text">
+                                        <p>Полностью натуральный шоколад, изготовленный путем меланжирования, какао-бобов, какао-масла, гречишного чая, тростникового сахара.</p>
+                                        <p>Меланжирование осуществляется при низкой температуре за счет чего в шоколаде сохраняются все полезные свойства какао-масла и гречишного чая.</p>
+                                        <p>Для любителей качественного горького шоколада и с непереносимостью лактозы идеально подойдет шоколад с повышенным содержанием какао-бобов и без молока в составе. Отличное угощение для последователей здорового образа жизни.</p>
+                                        <p><b>Пищевая ценность в 100 мл продукта:</b> Углеводы 40.1 г., Жиры 37,9 г., Белки 8 г., Энеретическая ценность 532 ккал.</p>
+                                        <p><b>Состав:</b> Какао-бобы, какао-масло, нерафинированный тростниковый сахар, гречишный чай, натуральный эмульгатор подсолнечный лицитин.</p>
+                                        <p><b>Условия хранения:</b> Хранить при температуре +12..+18°С и относительной влажности воздуха не выше 70%. Не подвергать воздействию прямых солнечных лучей.</p>
+                                        <p><b>Срок годности:</b> 12 месяцев.</p>
+                                        <p><b>Изготовитель:</b> ООО "ВИТАЛЭЙТ". Юр. адрес:Россия, 117587, Варшавское шоссе, д. 124-165. Фактический адрес: 140000, . Люберцы, Московская обл., ул. Хлебозаводская, д. 5.</p>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                            <div class="popup_card-price">
+                                <div class="product-price_current">6.50 p.</div>
+                                <div class="product__quantity"></div>
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="37"
+                                    data-sb-product-name="Горький шоколад с гречишным чаем Nature's own factory, 20 гр"
+                                    data-sb-product-price="6.50"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/popular/2.jpg">Добавить в корзину</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup_card" id="popup_popular3">
+                    <a href="#header" class="popup_area"></a>
+                    <div class="popup_card-body">
+                        <div class="popup_card-content products-grid_item">
+                            <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                            <div class="popup_card-info">
+                                <div class="popup_card-image"><img src="/img/popular/3.jpg" alt="Пастила фруктовая Фрутоежка"></div>
+                                <div class="popup_card-description">
+                                    <h2>Пастила фруктовая Фрутоежка, 500 гр</h2>
+                                    <div class="popup_card-text">
+                                        <p>Это пастила, без преувеличения, является сокровищницей витаминов, минералов и клетчатки с большим содержанием пектина. Благодаря применению низкотемпературной технологии, максимально сохранены все полезные минеральные вещества и витамины, как изысканный вкус, так полезные свойства свежих фруктов и ягод.</p>
+                                        <p>Наша пастила не содержит сахара, подсластителей, красителей и ГМО компонентов.</p>
+                                        <p><b>Пищевая ценность в 100 мл продукта:</b> Белки-2,4 г., жиры-0 г., углеводы-59 г. Энергетическая ценность - 269 ккал.</p>
+                                        <p><b>Состав:</b> Яблочное пюре, ароматизатор натуральный, консервант натуральный.</p>
+                                        <p><b>Условия хранения:</b> Хранить в сухом месте при температуре не выше +25С и влажности не более 75%.</p>
+                                        <p><b>Срок годности:</b> 12 месяцев.</p>
+                                        <p><b>Изготовитель:</b> ООО «Терский консервный завод» 361200, Кабардино-Балкарская Республика, Терский р-н, г. Терек, ул. Лермонтова, д. 18, Россия.</p>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                            <div class="popup_card-price">
+                                <div class="product-price_current">18.89 p.</div>
+                                <div class="product__quantity"></div>
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="38"
+                                    data-sb-product-name="Пастила фруктовая Фрутоежка, 500 гр"
+                                    data-sb-product-price="18.89"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/popular/3.jpg">Добавить в корзину</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup_card" id="popup_popular4">
+                    <a href="#header" class="popup_area"></a>
+                    <div class="popup_card-body">
+                        <div class="popup_card-content products-grid_item">
+                            <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                            <div class="popup_card-info">
+                                <div class="popup_card-image"><img src="/img/popular/4.jpg" alt="Хлебцы хрустящие кукурузно-рисовые"></div>
+                                <div class="popup_card-description">
+                                    <h2>Хлебцы хрустящие кукурузно-рисовые с морской солью Bite, 150 гр</h2>
+                                    <div class="popup_card-text">
+                                        <p>Приготовьте закуски с творогом, осощами, хумусом, арахисовой пастой и ваши гости точно захотят добавки! Свойства клетчатки, которые обеспечивают рис с кукурузой, избавят от сомнений о пользе такого праздника, а морская соль придаст особенный свежий вкус любимым снекам.</p>
+                                        <p><b>Пищевая ценность в 100 мл продукта:</b> Белок: 9 г Жиры: 1,5 г Углеводы: 74 г. Энергетическая ценность – 360 кКал.</p>
+                                        <p><b>Состав:</b> Крупа кукурузная, крупа рисовая, отруби кукурузные, соль морская пищевая.</p>
+                                        <p><b>Срок годности:</b> 6 месяцев.</p>
+                                        <p><b>Изготовитель:</b> ООО "Диет-Марка" 440061, Россия, Пензенская обл., г.Пенза, ул.Пролетарская, д.61 Изготовитель расфасованного продукта: ООО "БиоФудЛаб" 123022, россия, г.Каменка, ул.Ломоносова, д.2.</p>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                            <div class="popup_card-price">
+                                <div class="product-price_current">8.05 p.</div>
+                                <div class="product__quantity"></div>
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="39"
+                                    data-sb-product-name="Хлебцы хрустящие кукурузно-рисовые с морской солью Bite, 150 гр"
+                                    data-sb-product-price="8.05"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/popular/4.jpg">Добавить в корзину</button> 
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup_card" id="popup_popular5">
+                    <a href="#header" class="popup_area"></a>
+                    <div class="popup_card-body">
+                        <div class="popup_card-content products-grid_item">
+                            <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                            <div class="popup_card-info">
+                                <div class="popup_card-image"><img src="/img/popular/5.jpg" alt="Напиток 'Кокосово-рисовый'"></div>
+                                <div class="popup_card-description">
+                                    <h2>Напиток 'Кокосово-рисовый' ультрапастеризованный Barista Bite, 1 л</h2>
+                                    <div class="popup_card-text">
+                                        <p>Пенка получается густой, мягкой и бархатистой, а ещё вам не понадобится подсластитель или сироп. Но радует не только идеальная консистенция, но и невинный состав: напиток приготовлен из чистейшей артезианской воды, без добавления сахара, ароматизаторов и консервантов. Чистый кайф!</p>
+                                        <p>- Насыщенный сливочный вкус</p>
+                                        <p>- Более плотная текстура (жирность 1,5%)</p>
+                                        <p><b>Пищевая ценность в 100 мл продукта:</b> Белки - 0,7 гр, Жиры - 1,5 гр, Углеводы - 6,0 гр. Энергетическая ценность: 50 кКал/210 кДж.</p>
+                                        <p><b>Состав:</b> Вода, рис длиннозерный, кокос (паста, стружка), масло подсолнечное высокоолеиновое холодного отжима, натуральный ароматизатор, витаминно-минеральный премикс (витамин D2*, витамин В2* (рибофлавин), витамин В12*, кальций (трикальций фосфат, карбонат кальция)), соль морская, регуляторы кислотности: орто-фосфат калия 2-замещенный, орто-фосфат натрия 1-замещенный; натуральный стабилизатор: каррагинан из водорослей.</p>
+                                        <p><b>Условия хранения:</b> После вскрытия хранить закрытым в холодильнике и употребить в течение 3-4 дней.</p>
+                                        <p><b>Срок годности:</b> 12 месяцев.</p>
+                                        <p><b>Изготовитель:</b> ООО "БИОФУДТЕХ", 123022, РФ, г. Москва, ул. Рочдельская, д. 15, стр. 10. Адрес производства: 352389, РФ, Краснодарский край, г. Кропоткин, пер. Восточный,1.</p>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                            <div class="popup_card-price">
+                                <div class="product-price_current">17.79 p.</div>
+                                <div class="product__quantity"></div>
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="40"
+                                    data-sb-product-name="Напиток 'Кокосово-рисовый' ультрапастеризованный Barista Bite, 1 л"
+                                    data-sb-product-price="17.79"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/popular/5.jpg">Добавить в корзину</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup_card" id="popup_popular6">
+                    <a href="#header" class="popup_area"></a>
+                    <div class="popup_card-body">
+                        <div class="popup_card-content products-grid_item">
+                            <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                            <div class="popup_card-info">
+                                <div class="popup_card-image"><img src="/img/popular/6.jpg" alt="Гималайская розовая соль"></div>
+                                <div class="popup_card-description">
+                                    <h2>Гималайская розовая соль крупного помола UFEELGOOD, 200 гр</h2>
+                                    <div class="popup_card-text">
+                                        <p>Уже с древних времен ее полезные и лечебные свойства были замечены и оценены врачами и знахарями. Эта соль имеет в своём составе около 90 различных микроэлементов (в зависимости от источника от 82 до 92), также в ней отсутствуют какие-либо добавки или алюминиевые соединения. И если приверженцы здорового питания окрестили обычную соль «белой смертью», то про розовую гималайскую соль этого сказать нельзя! Она очень полезная и вкусная! Гималайская розовая соль (пищевая) крупного помола для мельницы, представленная в нашем интернет-магазине, прекрасно подойдет для Ваших кулинарных рецептов.</p>
+                                        <p>Розовая соль не только хороша для еды или в медицинских целях, она незаменима и в повседневной жизни:</p>
+                                        <p>- после бритья (раствор с розовой солью способен успокоить кожу, снять покраснения);</p>
+                                        <p>- в качестве дезодоранта;</p>
+                                        <p>- для ионизации воздуха с применением солевых ламп и тд.</p>
+                                        <p><b>Полезные свойства пищевой гималайской розовой соли:</b></p>
+                                        <p>- Источник важных микроэлементов</p>
+                                        <p>- Способствует очищению организма, выведению шлаков</p>
+                                        <p>- Восстанавливает водно-солевой обмен в организме</p>
+                                        <p>- Не задерживает воду в тканях (в отличие от поваренной соли)</p>
+                                        <p>- Полностью усваивается организмом</p>
+                                        <p>- Способствует регенерации клеток</p>
+                                        <p>- Улучшает циркуляцию крови и лимфы</p>
+                                        <p>- Снижает уровень боли в суставах</p>
+                                        <p>- Уравновешивает психологическое состояние</p>
+                                        <p>- Оказывает комплексное терапевтическое воздействие при использовании в ваннах</p>
+                                        <p><b>Противопоказания к приему солевых ванн с розовой солью:</b></p>
+                                        <p>- Заболевания крови во время острой стадии</p>
+                                        <p>- Беременность</p>
+                                        <p>- Туберкулез</p>
+                                        <p>- Прогрессирующая глаукома</p>
+                                        <p>- Венозная недостаточность</p>
+                                        <p>- Некоторые разновидности заболеваний кожи</p>
+                                        <p><b>Пищевая ценность в 100 мл продукта:</b> Белки - 0,7 гр, Жиры - 1,5 гр, Углеводы - 6,0 гр. Энергетическая ценность: 50 кКал/210 кДж.</p>
+                                        <p><b>Состав:</b> Вода, рис длиннозерный, кокос (паста, стружка), масло подсолнечное высокоолеиновое холодного отжима, натуральный ароматизатор, витаминно-минеральный премикс (витамин D2*, витамин В2* (рибофлавин), витамин В12*, кальций (трикальций фосфат, карбонат кальция)), соль морская, регуляторы кислотности: орто-фосфат калия 2-замещенный, орто-фосфат натрия 1-замещенный; натуральный стабилизатор: каррагинан из водорослей.</p>
+                                        <p><b>Условия хранения:</b> После вскрытия хранить закрытым в холодильнике и употребить в течение 3-4 дней.</p>
+                                        <p><b>Срок годности:</b> 12 месяцев.</p>
+                                        <p><b>Изготовитель:</b> ООО "БИОФУДТЕХ", 123022, РФ, г. Москва, ул. Рочдельская, д. 15, стр. 10. Адрес производства: 352389, РФ, Краснодарский край, г. Кропоткин, пер. Восточный,1.</p>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                            <div class="popup_card-price">
+                                <div class="product-price_current">14.15 p.</div>
+                                <div class="product__quantity"></div>
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="41"
+                                    data-sb-product-name="Гималайская розовая соль крупного помола UFEELGOOD, 200 гр"
+                                    data-sb-product-price="14.15"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/popular/6.jpg">Добавить в корзину</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer_inner">
+                    <div class="footer_info">
+                        <img src="/img/vegan-logo_footer.png" alt="logo">
+                        <p> ИП Спиридонов Андрей Андреевич</br>
+                            УНП 192770026</br>
+                            Свидетельство о государственной регистрации выдано Минским горисполкомом 6 февраля 2017 г.</br>
+                            Юридический адрес: РБ, г. Минск</br>
+                            Ул. Притыцкого 92-59</br>
+                            Р/С BY58 ALFA 3013 2793 9400 1027 0000</br>
+                            ЗАО "АЛЬФА-БАНК"</br>
+                            Юридический адрес: Ул. Сурганова, 43-47, 220013 Минск</p>
+                    </div>
+                    <div class="footer-block">
+                       <nav class="footer_menu">
+                            <h4>Меню сайта:</h4>
+                            <a class="footer_menu-link" href="/products.html">Товары</a></li>
+                            <a class="footer_menu-link" href="/delivery.html">Доставка и оплата</a>
+                            <a class="footer_menu-link" href="/contacts.html">Контакты</a>
+                        </nav>
+                        <div class="footer_social">
+                            <div class="footer_social-link">
+                                <h4>Мы в сети:</h4>
+                                <p>Email: <a class="footer_social-email" href="mailto:oyasim@email.com">oyasim@email.com</a></p>
+                            </div>
+                            <div class="footer_social-list">
+                                <a class="facebook" href="https://www.facebook.com/" target="_blank"><img src="/img/facebook.png"></a>
+                                <a class="twitter" href="https://twitter.com/" target="_blank"><img src="/img/twitter.png"></a>
+                                <a class="instagram" href="https://www.instagram.com/" target="_blank"><img src="/img/instagram.png"></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </footer> 
+
+    </div>
+
+    <!-- Подключаем библиотеку jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/library/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="/library/slick-1.8.1/slick/slick.js"></script>
+    <script src="/library/smartbasket/js/smartbasket.min.js"></script>
+
+    <!-- Подключаем файл скриптов -->
+    <script src="/js/script.js"></script>
+    <script src="/js/product.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopVegan</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="/library/smartbasket/css/smartbasket.min.css">
+    <link rel="stylesheet" href="/css/media.css">
+</head>
+<body>
+
+    <div class="site" id="site">
+        
+        <header class="header" id="header">
+            <div class="container">
+        
+                <div class="header_inner">
+
+                    <button class="menu-burger">
+                        <img src="/img/menu.png">
+                    </button>
+
+                    <nav class="menu">
+                        <ul class="menu_list">
+                            <li class="menu_list-item">
+                                <a class="menu_list-link" href="/products.html">Товары</a>
+                                <img class="menu_arrow arrow" src="/img/arrow.png" alt="иконка стрелка">
+                                <ul class="submenu_list">
+                                    <li class="submenu_list-item">
+                                        <a class="submenu_list-link" href="/sweets.html">Сладости</a>
+                                    </li>
+                                    <li class="submenu_list-item">
+                                        <a class="submenu_list-link" href="/flour.html">Мука</a>
+                                    </li>
+                                    <li class="submenu_list-item">
+                                        <a class="submenu_list-link" href="/oils.html">Масла</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_list-item"><a class="menu_list-link" href="/delivery.html">Доставка и оплата</a></li>
+                            <li class="menu_list-item"><a class="menu_list-link" href="/contacts.html">Контакты</a></li>
+                            <li class="menu-burger_account">
+                                    <a href="/office.html">
+                                        <button class="btn-burger_account">
+                                            <img src="/img/user3.png" alt="user">
+                                            <span>Аккаунт</span>
+                                        </button>
+                                    </a>
+                            </li>
+                            <li class="nav_search menu-burger_search">
+                                <input type="text" class="menu-burger_search_text" id="search">
+                                <button class="menu-burger_search_btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                    <a class="logo" href="/index.html"><img src="/img/vegan-logo.jpg" alt="logo"></a>
+                    
+                    <nav class="menu">
+                        <div class="nav_search">
+                            <input type="text" class="nav_search_text" id="search">
+                            <button class="nav_search_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <a class="cart" href="#">
+                            <img src="/img/shopping-cart.png">
+                            <div class="cart-nombers">
+                            </div>
+                        </a>
+                        <div class="smart-basket__wrapper"></div>
+                        <a href="/office.html"><button class="account">
+                            <img src="/img/user.png" alt="user">
+                            <span>Аккаунт</span>
+                        </button></a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="container">
+                
+                <div class="content_page">
+                    <h2>Сладости</h2>
+                    <img src="/img/leaf.png">
+                </div>
+    
+                <div class="products-content grid-container">
+                    <ul class="products-grid">
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_sweets1" class="popup_link"><img src="/img/sweets/1.jpg" alt="Сироп низкокалорийный БАУНТИ"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_sweets1" class="popup_link">Сироп низкокалорийный БАУНТИ "FITFORCE", бут.стекл.0.7 л</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">17.88 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="19"
+                                    data-sb-product-name="Сироп низкокалорийный БАУНТИ 'FITFORCE', бут.стекл.0.7 л"
+                                    data-sb-product-price="17.88"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/sweets/1.jpg">Добавить в корзину</button>        
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img image_switch">
+                                    <a href="#popup_sweets2" class="popup_link"><img src="/img/sweets/2.jpg" alt="Батончики амарантовые «Умные сладости» с кокосовой начинкой, в глазури, 110гр"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_sweets2" class="popup_link">Батончики амарантовые «Умные сладости» с кокосовой начинкой, в глазури, 110гр</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">11.96 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="20"
+                                    data-sb-product-name="Батончики амарантовые «Умные сладости» с кокосовой начинкой, в глазури, 110гр"
+                                    data-sb-product-price="11.96"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/sweets/2.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_sweets3"><img src="/img/sweets/3.jpg" alt="Батончики безглютеновые «Губка Боб» с шоколадной начинкой, витаминизированные, 110гр"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_sweets3">Батончики безглютеновые «Губка Боб» с шоколадной начинкой, витаминизированные, 110гр</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">13.21 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="21"
+                                    data-sb-product-name="Батончики безглютеновые «Губка Боб» с шоколадной начинкой, витаминизированные, 110гр"
+                                    data-sb-product-price="13.21"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/sweets/3.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_sweets4"><img src="/img/sweets/4.jpg" alt="Конфеты желейные 'Умные сладости' со вкусом Малины, 90гр"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_sweets4">Конфеты желейные "Умные сладости" со вкусом Малины, 90гр</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">8.23 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="22"
+                                    data-sb-product-name="Конфеты желейные 'Умные сладости' со вкусом Малины, 90гр"
+                                    data-sb-product-price="8.23"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/sweets/4.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_sweets5"><img src="/img/sweets/5.jpg" alt="Подушечки амарантовые «Умные сладости» с шоколадной начинкой со стевией, 150гр"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_sweets5">Подушечки амарантовые «Умные сладости» с шоколадной начинкой со стевией, 150гр</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">11.32 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+                                
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="23"
+                                    data-sb-product-name="Подушечки амарантовые «Умные сладости» с шоколадной начинкой со стевией, 150гр"
+                                    data-sb-product-price="11.32"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/sweets/5.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_sweets6"><img src="/img/sweets/6.jpg" alt="Батончики амарантовые «Умные сладости» с начинкой лесная ягода , в глазури, 20гр 4*20"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_sweets6">Батончики амарантовые «Умные сладости» с начинкой лесная ягода , в глазури, 20гр 4*20</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">2.47 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="24"
+                                    data-sb-product-name="Батончики амарантовые «Умные сладости» с начинкой лесная ягода , в глазури, 20гр 4*20"
+                                    data-sb-product-price="2.47"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/sweets/6.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_sweets7"><img src="/img/sweets/7.jpg" alt="КУКУРУЗА ВОЗДУШНАЯ (ПОПКОРН) 'ШОКОЛАДНАЯ' 50 Г"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_sweets7">КУКУРУЗА ВОЗДУШНАЯ (ПОПКОРН) "ШОКОЛАДНАЯ" 50 Г</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">7.30 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="25"
+                                    data-sb-product-name="КУКУРУЗА ВОЗДУШНАЯ (ПОПКОРН) 'ШОКОЛАДНАЯ' 50 Г"
+                                    data-sb-product-price="7.30"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/sweets/7.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img image_switch">
+                                    <a href="#popup_sweets8" class="popup_link"><img src="/img/sweets/8.jpg" alt="Урбеч из тертого обжаренного арахиса"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_sweets8" class="popup_link">Урбеч из тертого обжаренного арахиса "Ореховые истории", 300 гр</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">9.05 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="26"
+                                    data-sb-product-name="Урбеч из тертого обжаренного арахиса 'Ореховые истории', 300 гр"
+                                    data-sb-product-price="9.05"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/sweets/8.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_sweets9"><img src="/img/sweets/9.jpg" alt="Батончик протеиновый Венские вафли Protein viennese waffles Bombbar 60 гр."></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_sweets9">Батончик протеиновый Венские вафли Protein viennese waffles Bombbar 60 гр.</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">2.80 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="27"
+                                    data-sb-product-name="Батончик протеиновый Венские вафли Protein viennese waffles Bombbar 60 гр."
+                                    data-sb-product-price="2.80"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/sweets/9.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>  
+        </main>
+
+        <div class="popup_card" id="popup_sweets1">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image image_switch1"><img src="/img/sweets/1.jpg" alt="Сироп картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Сироп низкокалорийный БАУНТИ "FITFORCE", бут.стекл.0.7 л</h2>
+                            <div class="popup_card-text">
+                                <p>Представляем Вам широкий ассортимент низкокалорийных сиропов, содержащих минимальное количество калорий.</p>
+                                <p>Сироп  отлично сочетается с другими продуктами, особенно с безалкогольными напитками. На его основе готовятся многие коктейли. Если вы решили разнообразить ваш рацион, то используйте сироп совместно с мороженым, желе, десертами, выпечкой, молоком и т.д.</p>
+                                <p>Рекомендованное употребление: 1:8</p>
+                                <p>Пищевая ценность в 100 мл продукта: белки-0, жиры-0, углеводы-0.3, калорийность – 1.2 ккал (5.02кДж)</p>
+                                <p><b>Состав:</b> вода, регулятор кислотности (лимонная кислота), загуститель (карбоксиметилцеллюлоза), сахарозаменитель (цикламат, сахарин), ароматизатор, краситель «Колер карамельный», консервант (бензоат натрия).</p>
+                                <p><b>Условия хранения:</b> хранить при температуре не ниже 0&degС и не выше 25&degС без прямого попадания солнечных лучей.
+                                После вскрытия продукт хранить не более 4-х недель в плотно закрытой бутылке.
+                                Противопоказания: индивидуальная непереносимость продукта. Содержит подсластитель. При чрезмерном употреблении может оказывать слабительное действие. Содержит красители, которые могут оказывать отрицательное влияние на активность детей</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">17.88 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn" 
+                            data-sb-id-or-vendor-code="19"
+                            data-sb-product-name="Сироп низкокалорийный БАУНТИ 'FITFORCE', бут.стекл.0.7 л"
+                            data-sb-product-price="17.88"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/sweets/1.jpg">Добавить в корзину</button> 
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_sweets2">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/sweets/2.jpg" alt="Батончики картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Батончики амарантовые «Умные сладости» с кокосовой начинкой, в глазури, 110гр</h2>
+                            <div class="popup_card-text">
+                                <p>Батончики пониженной калорийности из амарантовой муки - новый продукт здорового питания.</p>
+                                <p><b>Амарант</b> - содержит в полтора раза больше белка (до 17%), чем пшеница, в три раза - клетчатки (до 7%), в четыре раза - минеральных веществ (кальций, железо, фосфор, калий и др.). Кроме того, амарант содержит витамины группы D, В1, В2, Е, РР. Самым главным достоинством амаранта является высокое содержание сквалена.</p>
+                                <p><b>Топинамбур</b> - источник инулина, который является естественным пребиотиком и обеспечивает рост полезной микрофлоры кишечника. Является эффективным средством для профилактики сахарного диабета.</p>
+                                <p><b>Стевия</b> - многолетний кустарник семейства астровых, растущий в теплых регионах. Уникальное растение, обладающее нулевой калорийностью, не вызывает кариеса, интенсивный подсластитель.</p>
+                                <p><b>Пищевая ценность в 100 грамм продукта:</b> белки - 8,3 г., жиры - 17,8 г., углеводы - 62,8 г.</p>
+                                <p><b>Энергетическая ценность на 100 грамм:</b> 444 ккал.</p>
+                                <p><b>Состав:</b> мука амарантовая грубого помола, мука рисовая грубого помола, мука кукурузная грубого помола, топинамбур сушеный, соль, начинка(жир растительный, подсластитель изомальт, какао-порошок, сыворотка молочная, мальтодекстрин, сухое молоко, порошок рожкового дерева, подсластитель-экстракт стевии (стевиозид), эмульгатор- лецитин соевый, ванилин), кондитерская глазурь (заменитель кондитерского жира лауриновый, какао-порошок, мальтодекстрин, сыворотка молочная, подсластитель - изомальт, порошок плодов рожкового дерева, порошок топинамбура, микрокристаллическая целлюлоза, подсластитель - экстракт стевии (стевиозид), эмульгатор - лецитин соевый, ванилин)</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">11.96 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                            data-sb-id-or-vendor-code="20"
+                            data-sb-product-name="Батончики амарантовые «Умные сладости» с кокосовой начинкой, в глазури, 110гр"
+                            data-sb-product-price="11.96"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/sweets/2.jpg">Добавить в корзину</button> 
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_sweets3">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/sweets/3.jpg" alt="Батончики картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Батончики безглютеновые «Губка Боб» с шоколадной начинкой, витаминизированные, 110гр</h2>
+                            <div class="popup_card-text">
+                                <p>Диетические амарантовые батончики Di&Di "Губка Боб" с шоколадной начинкой витаминизированные. Аппетитные батончики изготовлены на основе комбинации натуральных высококачественных ингредиентов, идеальны при здоровом, в том числе детском питании. Продукт не содержит в своем составе сахар и глютен, что особенно важно для людей с сахарным диабетом и для тех, кому необходимо соблюдать безглютеновую диету.</p>
+                                <p><b>Состав:</b> Мука амарантовая, мука рисовая, мука кукурузная, топинамбур сушеный, соль, витаминная смесь, начинка шоколадная (жир растительный, подсластитель изомальт, сыворотка молочная, мальтодекстрин, сухое молоко, какао-порошок, подсластитель стевия, эмульгатор лецитин соевый, ванилин), кондитерская глазурь (заменитель кондитерского жира лауриновый, какао-порошок, мальтодекстрин, сыворотка молочная, подсластитель изомальт, порошок плодов рожкового дерева, порошок топинамбура, микрокристаллическая целлюлоза, подсластитель стевия, эмульгатор лецитин соевый, ванилин).</p>
+                                <p><b>Пищевая ценность в 100 г продукта:</b> Белки – 8,3 г, жиры – 17,8 г, углеводы – 62,8 г.</p>
+                                <p><b>Энергетическая ценность:</b> 1850 кДж /444 ккал.</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">13.21 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn" 
+                            data-sb-id-or-vendor-code="21"
+                            data-sb-product-name="Батончики безглютеновые «Губка Боб» с шоколадной начинкой, витаминизированные, 110гр"
+                            data-sb-product-price="13.21"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/sweets/3.jpg">Добавить в корзину</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_sweets4">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/sweets/4.jpg" alt="Конфеты желейные картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Конфеты желейные "Умные сладости" со вкусом Малины, 90гр</h2>
+                            <div class="popup_card-text">
+                                <p>Конфеты желейные со вкусом малины, изготовлены без добавления фруктозы и сахара. В составе натураьный подсластитель на основе стевии.</p>
+                                <p><b>Состав:</b> патока, изомальт, загуститель-пектин, регулятор кислотности-кислота лимонная, влагоудерживающий агент-лактат натрия, ароматизатор «Малина», краситель пищевой, подсластитель-стевия.</p>
+                                <p><b>Пищевая ценность в 100 г продукта:</b> Белки – 0,4 г, жиры – 0 г, углеводы – 63,8 г (в т.ч. 24,5 г изомальта), (не более 5 г в пересчете на сахарозу).</p>
+                                <p><b>Энергетическая ценность:</b> 1029 кДж/246 ккал</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">8.23 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                            data-sb-id-or-vendor-code="22"
+                            data-sb-product-name="Конфеты желейные 'Умные сладости' со вкусом Малины, 90гр"
+                            data-sb-product-price="8.23"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/sweets/4.jpg">Добавить в корзину</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_sweets5">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/sweets/5.jpg" alt="Подушечки картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Подушечки амарантовые «Умные сладости» с шоколадной начинкой со стевией, 150гр</h2>
+                            <div class="popup_card-text">
+                                <p><b>Состав:</b> шоколадная начинка (жир растительный, подсластитель изомальт, сыворотка молочная, мальтодекстрин, нелауриновый заменитель какао-масла, какао-порошок, сухое молоко, порошок рожкового дерева, подсластитель – экстракт стевии (стевиозид), эмульгатор – лецитин соевый, ванилин), мука амарантовая грубого помола, мука рисовая грубого помола, мука кукурузная грубого помола, топинамбур сушеный, соль, витаминная смесь.</p>
+                                <p><b>Пищевая ценность в 100 г продукта:</b> Белки – 8.3 г, жиры – 17.8 г, углеводы – 62.8 г (не более 5 г в пересчете на сахарозу), Клетчатка - 3,5 г</p>
+                                <p><b>Энергетическая ценность:</b> 1850 кДж/444 ккал</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">11.32 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                            data-sb-id-or-vendor-code="23"
+                            data-sb-product-name="Подушечки амарантовые «Умные сладости» с шоколадной начинкой со стевией, 150гр"
+                            data-sb-product-price="11.32"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/sweets/5.jpg">Добавить в корзину</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_sweets6">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/sweets/6.jpg" alt="Батончики картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Батончики амарантовые «Умные сладости» с начинкой лесная ягода , в глазури, 20гр 4*20</h2>
+                            <div class="popup_card-text">
+                                <p> Аппетитные батончики изготовлены на основе комбинации натуральных высококачественных ингредиентов, идеальны при здоровом, в том числе детском питании. Батончики не содержат в своем составе сахара, фруктозы и глютена, что особенно важно для людей с сахарным диабетом и для тех, кому необходимо соблюдать безглютеновую диету.</p>
+                                <p><b>Состав:</b> Мука амарантовая, мука рисовая, мука кукурузная, топинамбур сушеный, соль, витаминная смесь, начинка лесная ягода ( жир растительный, подсластитель изомальт, сыворотка молочная, мальтодекстрин, сухое молоко, краситель кармин, подсластитель стевия, эмульгатор лецитин соевый, ванилин, ароматизатор земляника лесная, натуральный), кондитерская глазурь (заменитель кондитерского жира лауриновый, какао-порошок, мальтодекстрин, сыворотка молочная, подсластитель изомальт, порошок плодов рожкового дерева, порошок топинамбура, микрокристаллическая целлюлоза, подсластитель стевия, эмульгатор лецитин соевый, ванилин).</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">2.47 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                            data-sb-id-or-vendor-code="24"
+                            data-sb-product-name="Батончики амарантовые «Умные сладости» с начинкой лесная ягода , в глазури, 20гр 4*20"
+                            data-sb-product-price="2.47"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/sweets/6.jpg">Добавить в корзину</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_sweets7">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/sweets/7.jpg" alt="Кукуруза картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>КУКУРУЗА ВОЗДУШНАЯ (ПОПКОРН) "ШОКОЛАДНАЯ" 50 Г</h2>
+                            <div class="popup_card-text">
+                                <p><b>Состав:</b> зерно кукурузы, кокосовое масло, тростниковый сахар, натуральный какао-порошок, кокос, молочная сыворотка, соевый лецитин.</p>
+                                <p><b>Пищевая ценность в 100 г продукта:</b> Белки – 4.5 г, жиры – 15 г, углеводы – 64 г</p>
+                                <p><b>Энергетическая ценность в 100 гр.:</b> 436 ккал</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">7.30 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                            data-sb-id-or-vendor-code="25"
+                            data-sb-product-name="КУКУРУЗА ВОЗДУШНАЯ (ПОПКОРН) 'ШОКОЛАДНАЯ' 50 Г"
+                            data-sb-product-price="7.30"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/sweets/7.jpg">Добавить в корзину</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="popup_card" id="popup_sweets8">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/sweets/8.jpg" alt="Урбеч из тертого обжаренного арахиса"></div>
+                        <div class="popup_card-description">
+                            <h2>Урбеч из тертого обжаренного арахиса "Ореховые истории", 300 гр</h2>
+                            <div class="popup_card-text">
+                                <p>Урбеч "Ореховые истории" можно рекомендовать людям с избыточным весом. Он усиливает ощущение сытости и вполне способен заменить полноценный перекус. Этот продукт - лучшее средство для укрепления сердечно- сосудистой системы из-за содержащихся в нем полифенолов. Арахисовый урбеч улучшает состояние крови и является хорошей профилактикой диабета.</p>
+                                <p>Технология производства урбеча позволяет сохранить все полезные свойства арахиса – аминокислоты, витамины, микроэлементы в максимально активном виде. Его хорошо использовать, как быстрый завтрак или перекус, намазав на кусочек зернового хлеба, тост или злаковый хлебец.</p>
+                                <p><b>Состав:</b> Семена арахиса очищенные обжаренные</p>
+                                <p><b>Пищевая ценность в 100 г продукта:</b> Белки – 28 г; Жиры – 48 г; Углеводы – 4,5 г;</p>
+                                <p><b>Энергетическая ценность:</b> 560 ккал/2510 кДж</p>
+                                <p><b>Производитель:</b> ООО "Фирма Унитрон", РФ, г. Пенза, ул. Горная, 3А</p>
+                                <p><b>Срок годности:</b> 9 месяцев</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">9.05 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                            data-sb-id-or-vendor-code="26"
+                            data-sb-product-name="Урбеч из тертого обжаренного арахиса 'Ореховые истории', 300 гр"
+                            data-sb-product-price="9.05"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/sweets/8.jpg">Добавить в корзину</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_sweets9">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/sweets/9.jpg" alt="Батончик протеиновый картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>Батончик протеиновый Венские вафли Protein viennese waffles Bombbar 60 гр.</h2>
+                            <div class="popup_card-text">
+                                <p>"Bombbar" - это спортивный батончик с высоким содержанием протеина и минимальным количеством сахара. Обладает восхитительным вкусом, быстро снабжает организм многокомпонентным протеином, отлично подходит для белковой диеты. </p>
+                                <p><b>Состав:</b> Белки 40 % (концентрат сывороточного белка, концентрат молочного белка),   изомальтоолигосахарид , вода, эквивалент масла какао, кокосовая стружка, агенты влагоудерживающие (глицерин, сорбитол), соль, ароматизаторы  натуральные, регулятор кислотности - лимонная кислота, аскорбиновая кислота (витамин С),  натуральный подсластитель - стевиозид.</p>
+                                <p><b>Энергетическая ценность:</b> 148 Ккал </p>
+                                <p><b>Вес:</b> 60 Гр</p>
+                                <p><b>Пищевые волокна:</b> 20 Гр</p>
+                                <p><b>Витамин С:</b> 40 Мг</p>
+                                <p><b>Белки:</b> 20 Гр</p>
+                                <p><b>Жиры:</b> 6 Гр</p>
+                                <p><b>Углеводы:</b> 3 Гр</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">2.80 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                            data-sb-id-or-vendor-code="27"
+                            data-sb-product-name="Батончик протеиновый Венские вафли Protein viennese waffles Bombbar 60 гр."
+                            data-sb-product-price="2.80"
+                            data-sb-product-quantity="1"
+                            data-sb-product-img="/img/sweets/9.jpg">Добавить в корзину</button> 
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer_inner">
+                    <div class="footer_info">
+                        <a href="/index.html"><img src="/img/vegan-logo_footer.png" alt="logo"></a>
+                        <p> ИП Спиридонов Андрей Андреевич</br>
+                            УНП 192770026</br>
+                            Свидетельство о государственной регистрации выдано Минским горисполкомом 6 февраля 2017 г.</br>
+                            Юридический адрес: РБ, г. Минск</br>
+                            Ул. Притыцкого 92-59</br>
+                            Р/С BY58 ALFA 3013 2793 9400 1027 0000</br>
+                            ЗАО "АЛЬФА-БАНК"</br>
+                            Юридический адрес: Ул. Сурганова, 43-47, 220013 Минск</p>
+                    </div>
+                    <div class="footer-block">
+                       <nav class="footer_menu">
+                            <h4>Меню сайта:</h4>
+                            <a class="footer_menu-link" href="/products.html">Товары</a></li>
+                            <a class="footer_menu-link" href="/delivery.html">Доставка и оплата</a>
+                            <a class="footer_menu-link" href="/contacts.html">Контакты</a>
+                        </nav>
+                        <div class="footer_social">
+                            <div class="footer_social-link">
+                                <h4>Мы в сети:</h4>
+                                <p>Email: <a class="footer_social-email" href="mailto:oyasim@email.com">oyasim@email.com</a></p>
+                            </div>
+                            <div class="footer_social-list">
+                                <a class="facebook" href="https://www.facebook.com/" target="_blank"><img src="/img/facebook.png"></a>
+                                <a class="twitter" href="https://twitter.com/" target="_blank"><img src="/img/twitter.png"></a>
+                                <a class="instagram" href="https://www.instagram.com/" target="_blank"><img src="/img/instagram.png"></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </footer> 
+
+    </div>
+
+     <!-- Подключаем библиотеку jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/library/smartbasket/js/smartbasket.min.js"></script>
+    <script src="/js/product.js"></script>
+    <script src="/js/script.js"></script>
+
+</body>
+</html>

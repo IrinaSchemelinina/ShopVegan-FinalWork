@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopVegan</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/library/smartbasket/css/smartbasket.min.css">
+    <link rel="stylesheet" href="/css/office.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+    
+</head>
+<body>
+
+<div class="site">
+
+  <header class="header" id="header">
+    <div class="container">
+
+        <div class="header_inner">
+
+            <button class="menu-burger">
+                <img src="/img/menu.png">
+            </button>
+
+            <nav class="menu">
+                <ul class="menu_list">
+                    <li class="menu_list-item">
+                        <a class="menu_list-link" href="/products.html">Товары</a>
+                        <img class="menu_arrow arrow" src="/img/arrow.png" alt="иконка стрелка">
+                        <ul class="submenu_list">
+                            <li class="submenu_list-item">
+                                <a class="submenu_list-link" href="/sweets.html">Сладости</a>
+                            </li>
+                            <li class="submenu_list-item">
+                                <a class="submenu_list-link" href="/flour.html">Мука</a>
+                            </li>
+                            <li class="submenu_list-item">
+                                <a class="submenu_list-link" href="/oils.html">Масла</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_list-item"><a class="menu_list-link" href="/delivery.html">Доставка и оплата</a></li>
+                    <li class="menu_list-item"><a class="menu_list-link" href="/contacts.html">Контакты</a></li>
+                    <li class="menu-burger_account">
+                            <a href="/office.html">
+                                <button class="btn-burger_account">
+                                    <img src="/img/user3.png" alt="user">
+                                    <span>Аккаунт</span>
+                                </button>
+                            </a>
+                    </li>
+                    <li class="nav_search menu-burger_search">
+                        <input type="text" class="menu-burger_search_text" id="search">
+                        <button class="menu-burger_search_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <a class="logo" href="/index.html"><img src="/img/vegan-logo.jpg" alt="logo"></a>
+            
+            <nav class="menu">
+                <div class="nav_search">
+                    <input type="text" class="nav_search_text" id="search">
+                    <button class="nav_search_btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </div>
+                <a class="cart" href="#">
+                    <img src="/img/shopping-cart.png">
+                    <div class="cart-nombers">
+                    </div>
+                </a>
+                <div class="smart-basket__wrapper"></div>
+                <a href="/office.html"><button class="account">
+                    <img src="/img/user.png" alt="user">
+                    <span>Аккаунт</span>
+                </button></a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+  <div class="registration">
+      <div class="container">
+        
+        <div class="icon">
+          <button class="modal-show icon-btn" data-modal="#signup-in">
+            <img src="/img/signup.png">
+            <p>Регистрация</p>
+          </button>
+          <button class="modal-show icon-btn" data-modal="#log-in">
+            <img src="/img/login.png">
+            <p>Вход</p>
+          </button>
+        </div>
+
+        
+          
+          <div class="modal-wrap hide" id="signup-in">
+            <div class="modal modal-signup">
+              <button class="modal-close" data-modal="#signup-in"><img src="/img/close.png" alt="X"></button>
+  
+              <form method="POST">
+                <div class="signup">
+                  <h2>Регистрация</h2>
+                  <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                  </div>  
+                  <div class="form-group">
+                    <label for="pass">Пароль</label>
+                    <input type="password" class="form-control" id="pass" name="pass" autocomplete="off">
+                  </div>
+                  <div class="form-group">
+                    <label for="Email">Адрес электронной почты</label>
+                    <input type="email" class="form-control" id="Email" name="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="birthday">День рождения</label>
+                    <input type="date" class="form-control" id="birthday" name="birthday">
+                  </div>
+                  <div class="sex-block">
+                    <label>Пол</label>
+                    <div><input type="radio" value="man" name="sex" class="sex" checked>Муж.</div>
+                    <div><input type="radio" value="woman" name="sex" class="sex">Жен.</div>
+                  </div>
+                  <button id="signup-submit" class="registration-btn">Отправить</button>
+                </div>
+              </form>
+  
+            </div>
+          </div>
+
+          <div class="modal-wrap hide" id="log-in">
+            <div class="modal modal-login">
+              <button class="modal-close" data-modal="#log-in"><img src="/img/close.png" alt="X"></button>
+
+              <form method="POST">
+                <div class="login">
+                  <h2>Вход</h2>
+                  <div class="form-group">
+                    <label for="login-email">Адрес электронной почты</label>
+                    <input type="email" class="form-control" id="login-email" name="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="login-pass">Пароль</label>
+                    <input type="password" class="form-control" id="login-pass" name="pass" autocomplete="off">
+                  </div>
+                  <button id="login-submit" class="registration-btn login-btn">Войти</button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+      </div>
+  </div>
+
+  <footer>
+    <div class="container">
+        <div class="footer_inner">
+            <div class="footer_info">
+                <a href="/index.html"><img src="/img/vegan-logo_footer.png" alt="logo"></a>
+                <p> ИП Спиридонов Андрей Андреевич</br>
+                    УНП 192770026</br>
+                    Свидетельство о государственной регистрации выдано Минским горисполкомом 6 февраля 2017 г.</br>
+                    Юридический адрес: РБ, г. Минск</br>
+                    Ул. Притыцкого 92-59</br>
+                    Р/С BY58 ALFA 3013 2793 9400 1027 0000</br>
+                    ЗАО "АЛЬФА-БАНК"</br>
+                    Юридический адрес: Ул. Сурганова, 43-47, 220013 Минск</p>
+            </div>
+            <div class="footer-block">
+               <nav class="footer_menu">
+                    <h4>Меню сайта:</h4>
+                    <a class="footer_menu-link" href="/products.html">Товары</a></li>
+                    <a class="footer_menu-link" href="/delivery.html">Доставка и оплата</a>
+                    <a class="footer_menu-link" href="/contacts.html">Контакты</a>
+                </nav>
+                <div class="footer_social">
+                    <div class="footer_social-link">
+                        <h4>Мы в сети:</h4>
+                        <p>Email: <a class="footer_social-email" href="mailto:oyasim@email.com">oyasim@email.com</a></p>
+                    </div>
+                    <div class="footer_social-list">
+                      <a class="facebook" href="https://www.facebook.com/" target="_blank"><img src="/img/facebook.png"></a>
+                      <a class="twitter" href="https://twitter.com/" target="_blank"><img src="/img/twitter.png"></a>
+                      <a class="instagram" href="https://www.instagram.com/" target="_blank"><img src="/img/instagram.png"></a>
+                  </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+  </footer> 
+
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/library/smartbasket/js/smartbasket.min.js"></script>
+
+    <script src="/js/ajax.js"></script>
+    <script src="/js/office.js"></script>
+    <script src="/js/modal.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/product.js"></script>
+
+</body>
+</html>

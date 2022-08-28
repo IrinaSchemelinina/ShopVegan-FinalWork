@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopVegan</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="/library/smartbasket/css/smartbasket.min.css">
+    <link rel="stylesheet" href="/css/media.css">
+</head>
+<body>
+
+    <div class="site" id="site">
+        
+        <header class="header" id="header">
+            <div class="container">
+        
+                <div class="header_inner">
+
+                    <button class="menu-burger">
+                        <img src="/img/menu.png">
+                    </button>
+
+                    <nav class="menu">
+                        <ul class="menu_list">
+                            <li class="menu_list-item">
+                                <a class="menu_list-link" href="/products.html">Товары</a>
+                                <img class="menu_arrow arrow" src="/img/arrow.png" alt="иконка стрелка">
+                                <ul class="submenu_list">
+                                    <li class="submenu_list-item">
+                                        <a class="submenu_list-link" href="/sweets.html">Сладости</a>
+                                    </li>
+                                    <li class="submenu_list-item">
+                                        <a class="submenu_list-link" href="/flour.html">Мука</a>
+                                    </li>
+                                    <li class="submenu_list-item">
+                                        <a class="submenu_list-link" href="/oils.html">Масла</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu_list-item"><a class="menu_list-link" href="/delivery.html">Доставка и оплата</a></li>
+                            <li class="menu_list-item"><a class="menu_list-link" href="/contacts.html">Контакты</a></li>
+                            <li class="menu-burger_account">
+                                    <a href="/office.html">
+                                        <button class="btn-burger_account">
+                                            <img src="/img/user3.png" alt="user">
+                                            <span>Аккаунт</span>
+                                        </button>
+                                    </a>
+                            </li>
+                            <li class="nav_search menu-burger_search">
+                                <input type="text" class="menu-burger_search_text" id="search">
+                                <button class="menu-burger_search_btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                    <a class="logo" href="/index.html"><img src="/img/vegan-logo.jpg" alt="logo"></a>
+                    
+                    <nav class="menu">
+                        <div class="nav_search">
+                            <input type="text" class="nav_search_text" id="search">
+                            <button class="nav_search_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <a class="cart" href="#">
+                            <img src="/img/shopping-cart.png">
+                            <div class="cart-nombers">
+                            </div>
+                        </a>
+                        <div class="smart-basket__wrapper"></div>
+                        <a href="/office.html"><button class="account">
+                            <img src="/img/user.png" alt="user">
+                            <span>Аккаунт</span>
+                        </button></a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="container">
+                
+                <div class="content_page">
+                    <h2>Мука</h2>
+                    <img src="/img/leaf.png">
+                </div>
+
+                <div class="products-content grid-container">
+
+                    <ul class="products-grid">
+                        <li class="products-grid_item ">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_flour1"><img src="/img/flour/1.jpg" alt="МУКА ИЗ КРАСНОГО РИСА БЕЗ ГЛЮТЕНА 500ГР"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_flour1">МУКА ИЗ КРАСНОГО РИСА БЕЗ ГЛЮТЕНА 500ГР</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">6.60 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="01"
+                                    data-sb-product-name="МУКА ИЗ КРАСНОГО РИСА БЕЗ ГЛЮТЕНА 500ГР"
+                                    data-sb-product-price="6.60"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/flour/1.jpg">Добавить в корзину</button>        
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_flour2"><img src="/img/flour/2.png" alt="МУКА КУКУРУЗНАЯ БЕЗ ГЛЮТЕНА, 500 Г"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_flour2">МУКА КУКУРУЗНАЯ "ГАРНЕЦ" БЕЗ ГЛЮТЕНА, 500 Г</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">5.66 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="02"
+                                    data-sb-product-name="МУКА КУКУРУЗНАЯ 'ГАРНЕЦ' БЕЗ ГЛЮТЕНА, 500 Г"
+                                    data-sb-product-price="5.66"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/flour/2.png">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_flour3"><img src="/img/flour/3.jpg" alt="МУКА КУНЖУТНАЯ 300Г. ФАРМЭКО"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_flour3">МУКА КУНЖУТНАЯ 300Г. ФАРМЭКО</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">8.25 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn" 
+                                    data-sb-id-or-vendor-code="03"
+                                    data-sb-product-name="МУКА КУНЖУТНАЯ 300Г. ФАРМЭКО"
+                                    data-sb-product-price="8.25"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/flour/3.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_flour4"><img src="/img/flour/4.jpg" alt="МУКА ГРЕЧНЕВАЯ БЕЗ ГЛЮТЕНА, 500 Г"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_flour4">МУКА ГРЕЧНЕВАЯ "ГАРНЕЦ" БЕЗ ГЛЮТЕНА, 500 Г</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">9.75 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="04"
+                                    data-sb-product-name="МУКА ГРЕЧНЕВАЯ 'ГАРНЕЦ' БЕЗ ГЛЮТЕНА, 500 Г"
+                                    data-sb-product-price="9.75"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/flour/4.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_flour5"><img src="/img/flour/5.jpg" alt="МУКА ИЗ ЧЕРНОГО РИСА БЕЗ ГЛЮТЕНА 500Г"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_flour5">МУКА ИЗ ЧЕРНОГО РИСА БЕЗ ГЛЮТЕНА 500Г</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">11.20 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+                                
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="05"
+                                    data-sb-product-name="МУКА ИЗ ЧЕРНОГО РИСА БЕЗ ГЛЮТЕНА 500Г"
+                                    data-sb-product-price="11.20"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/flour/5.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_flour6"><img src="/img/flour/6.jpg" alt="МУКА РИСОВАЯ ЦЕЛЬНОЗЕРНОВАЯ БЕЗ ГЛЮТЕНА, 500 Г"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_flour6">МУКА РИСОВАЯ ЦЕЛЬНОЗЕРНОВАЯ БЕЗ ГЛЮТЕНА "ГАРНЕЦ", 500 Г</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">6.80 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="06"
+                                    data-sb-product-name="МУКА РИСОВАЯ ЦЕЛЬНОЗЕРНОВАЯ БЕЗ ГЛЮТЕНА 'ГАРНЕЦ', 500 Г"
+                                    data-sb-product-price="6.80"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/flour/6.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_flour7"><img src="/img/flour/7.jpg" alt="МУКА СОЕВАЯ 500 Г"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_flour7">МУКА СОЕВАЯ "ГАРНЕЦ", 500 Г</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">6.87 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="07"
+                                    data-sb-product-name="МУКА СОЕВАЯ 'ГАРНЕЦ', 500 Г"
+                                    data-sb-product-price="6.87"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/flour/7.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_flour8"><img src="/img/flour/8.jpg" alt="МУКА ПШЕНИЧНАЯ ОБОЙНАЯ (ЦЕЛЬНОЗЕРНОВАЯ) 500Г"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_flour8">МУКА ПШЕНИЧНАЯ ОБОЙНАЯ (ЦЕЛЬНОЗЕРНОВАЯ) 500Г</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">2.71 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="08"
+                                    data-sb-product-name="МУКА ПШЕНИЧНАЯ ОБОЙНАЯ (ЦЕЛЬНОЗЕРНОВАЯ) 500Г"
+                                    data-sb-product-price="2.71"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/flour/8.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+
+                        <li class="products-grid_item">
+                            <article class="product">
+                                <div class="image_switch_img">
+                                    <a href="#popup_flour9"><img src="/img/flour/9.jpg" alt="МУКА РЖАНАЯ ЦЕЛЬНОСМОЛОТАЯ 500ГР"></a>
+                                </div>
+                                <h3 class="product_title">
+                                    <a href="#popup_flour9">МУКА РЖАНАЯ ЦЕЛЬНОСМОЛОТАЯ "ГАРНЕЦ" 500ГР</a>
+                                </h3>
+                                <div class="product_price">
+                                    <span class="product-price_current">2.65 p.</span>
+                                </div>
+
+                                <div class="product__quantity"></div>
+
+                                <button class="product_btn btn"
+                                    data-sb-id-or-vendor-code="09"
+                                    data-sb-product-name="МУКА РЖАНАЯ ЦЕЛЬНОСМОЛОТАЯ 'ГАРНЕЦ' 500ГР"
+                                    data-sb-product-price="2.65"
+                                    data-sb-product-quantity="1"
+                                    data-sb-product-img="/img/flour/9.jpg">Добавить в корзину</button>
+                            </article>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>  
+        </main>
+
+        <div class="popup_card" id="popup_flour1">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/flour/1.jpg" alt="Мука из красного риса картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>МУКА ИЗ КРАСНОГО РИСА БЕЗ ГЛЮТЕНА 500ГР</h2>
+                            <div class="popup_card-text">
+                                <p><b>Состав:</b> мука из красного риса</p>
+                                <p><b>Пищевая ценность на 100гр.продукта:</b> белки - 9.1 гр., жиры - 3.6 гр., углеводы - 76 гр.</p>
+                                <p><b>Энергетическая ценность на 100гр. продукта:</b> 373кКал</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">6.60 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn" 
+                                data-sb-id-or-vendor-code="01"
+                                data-sb-product-name="МУКА ИЗ КРАСНОГО РИСА БЕЗ ГЛЮТЕНА 500ГР"
+                                data-sb-product-price="6.60"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/flour/1.jpg">Добавить в корзину</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_flour2">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/flour/2.png" alt="Мука кукурузная картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>МУКА КУКУРУЗНАЯ "ГАРНЕЦ" БЕЗ ГЛЮТЕНА, 500 Г</h2>
+                            <div class="popup_card-text">
+                                <p><b>Состав:</b> Мука кукурузная цельнозерновая без глютена.</p>
+                                <p><b>Пищевая ценность на 100гр.продукта:</b> Белки - 8 г, Жиры - 1 г, Углеводы - 75 г.</p>
+                                <p><b>Энергетическая ценность на 100гр. продукта:</b> 321 кКал.</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">5.66 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                                data-sb-id-or-vendor-code="02"
+                                data-sb-product-name="МУКА КУКУРУЗНАЯ 'ГАРНЕЦ' БЕЗ ГЛЮТЕНА, 500 Г"
+                                data-sb-product-price="5.66"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/flour/2.png">Добавить в корзину</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_flour3">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/flour/3.jpg" alt="Мука кунжутная картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>МУКА КУНЖУТНАЯ 300Г. ФАРМЭКО</h2>
+                            <div class="popup_card-text">
+                                <p><b>Состав:</b> измельченные семена кунжута (после измельчения масла)</p>
+                                <p><b>Пищевая ценность на 100гр.продукта:</b> белки - 28гр., жиры - 20гр., углеводы - 15гр.</p>
+                                <p><b>Энергетическая ценность на 100гр. продукта:</b> 352ккал/1470кДж</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">8.25 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn" 
+                                data-sb-id-or-vendor-code="03"
+                                data-sb-product-name="МУКА КУНЖУТНАЯ 300Г. ФАРМЭКО"
+                                data-sb-product-price="8.25"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/flour/3.jpg">Добавить в корзину</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_flour4">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/flour/4.jpg" alt="Мука гречневая картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>МУКА ГРЕЧНЕВАЯ "ГАРНЕЦ" БЕЗ ГЛЮТЕНА, 500 Г</h2>
+                            <div class="popup_card-text">
+                                <p><b>Состав:</b> мука гречневая цельнозерновая.</p>
+                                <p><b>Пищевая ценность на 100гр.продукта:</b> белки - 12,5 г; жиры - 2,5 г; углеводы - 70,0 г</p>
+                                <p><b>Энергетическая ценность на 100гр. продукта:</b> 350 кКал.</p>
+                                <p><b>Срок годности и условия хранения:</b>  18 месяцев с даты изготовления.</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">9.75 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                                data-sb-id-or-vendor-code="04"
+                                data-sb-product-name="МУКА ГРЕЧНЕВАЯ 'ГАРНЕЦ' БЕЗ ГЛЮТЕНА, 500 Г"
+                                data-sb-product-price="9.75"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/flour/4.jpg">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_flour5">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/flour/5.jpg" alt="Мука из чёрного риса картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>МУКА ИЗ ЧЕРНОГО РИСА БЕЗ ГЛЮТЕНА 500Г</h2>
+                            <div class="popup_card-text">
+                                <p><b>Состав:</b>  100% мука из черного риса</p>
+                                <p><b>Пищевая ценность на 100гр.продукта:</b> белки - 9.1, углеводы - 76 гр., жиры - 3.6гр.</p>
+                                <p><b>Энергетическая ценность на 100гр. продукта:</b> 336ккал</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">11.20 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                                data-sb-id-or-vendor-code="05"
+                                data-sb-product-name="МУКА ИЗ ЧЕРНОГО РИСА БЕЗ ГЛЮТЕНА 500Г"
+                                data-sb-product-price="11.20"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/flour/5.jpg">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_flour6">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/flour/6.jpg" alt="Мука рисовая цельнозерновая картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>МУКА РИСОВАЯ ЦЕЛЬНОЗЕРНОВАЯ БЕЗ ГЛЮТЕНА "ГАРНЕЦ", 500 Г</h2>
+                            <div class="popup_card-text">
+                                <p><b>Состав:</b>  мука рисовая цельнозерновая.</p>
+                                <p><b>Пищевая ценность на 100гр.продукта:</b> белки - 7,0 г; жиры - 0,5 г; углеводы - 78,0 г</p>
+                                <p><b>Энергетическая ценность на 100гр. продукта:</b> 345 кКал.</p>
+                                <p><b>Срок годности и условия хранения:</b> 16 месяцев с даты изготовления.</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">6.80 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                                data-sb-id-or-vendor-code="06"
+                                data-sb-product-name="МУКА РИСОВАЯ ЦЕЛЬНОЗЕРНОВАЯ БЕЗ ГЛЮТЕНА 'ГАРНЕЦ', 500 Г"
+                                data-sb-product-price="6.80"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/flour/6.jpg">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_flour7">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/flour/7.jpg" alt="Мука соевая картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>МУКА СОЕВАЯ "ГАРНЕЦ", 500 Г</h2>
+                            <div class="popup_card-text">
+                                <p><b>Состав:</b> мука соевая полуобезжиренная 100%.</p>
+                                <p><b>Пищевая ценность на 100гр.продукта:</b> белки - 43г.  жиры - 8 г.  углеводы - 22 г</p>
+                                <p><b>Энергетическая ценность на 100гр. продукта:</b> 330 ккал</p>
+                                <p><b>Условия хранения:</b> Хранить при температуре не более 20&degС и относительной влажности воздуха не более 75 %.</p>
+                                <p><b>Срок годности:</b> 12 мес</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">6.87 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                                data-sb-id-or-vendor-code="07"
+                                data-sb-product-name="МУКА СОЕВАЯ 'ГАРНЕЦ', 500 Г"
+                                data-sb-product-price="6.87"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/flour/7.jpg">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_flour8">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/flour/8.jpg" alt="Мука пшеничная картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>МУКА ПШЕНИЧНАЯ ОБОЙНАЯ (ЦЕЛЬНОЗЕРНОВАЯ) 500Г</h2>
+                            <div class="popup_card-text">
+                                <p><b>Состав:</b> мука пшеничная.</p>
+                                <p><b>Пищевая ценность на 100гр.продукта:</b> белки — 11.5 г., жиры — 2.2 г., углеводы — 61.5 г.</p>
+                                <p><b>Энергетическая ценность на 100гр. продукта:</b> 312 ккал.</p>
+                                <p><b>Условия хранения:</b> Хранить при температуре не более 20&degС и относительной влажности воздуха не более 75 %.</p>
+                                <p><b>Срок годности:</b> 12 мес</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">2.71 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                                data-sb-id-or-vendor-code="08"
+                                data-sb-product-name="МУКА ПШЕНИЧНАЯ ОБОЙНАЯ (ЦЕЛЬНОЗЕРНОВАЯ) 500Г"
+                                data-sb-product-price="2.71"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/flour/8.jpg">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup_card" id="popup_flour9">
+            <a href="#header" class="popup_area"></a>
+            <div class="popup_card-body">
+                <div class="popup_card-content products-grid_item">
+                    <a href="#header" class="popup_card-close"><img src="/img/close.png" alt="X"></a>
+                    <div class="popup_card-info">
+                        <div class="popup_card-image"><img src="/img/flour/9.jpg" alt="Мука ржаная картинка"></div>
+                        <div class="popup_card-description">
+                            <h2>МУКА РЖАНАЯ ЦЕЛЬНОСМОЛОТАЯ "ГАРНЕЦ" 500ГР</h2>
+                            <div class="popup_card-text">
+                                <p><b>Состав:</b> мука пшеничная 100%</p>
+                                <p><b>Пищевая ценность на 100гр. продукта:</b> Белки: 11.5, Жиры: 2.2, Углеводы: 61.5</p>
+                                <p><b>Энергетическая ценность на 100гр. продукта:</b> 312 ккал/ 1310 кДж</p>
+                            </div>   
+                        </div>
+                    </div>
+                    
+                    <div class="popup_card-price">
+                        <div class="product-price_current">2.65 p.</div>
+                        <div class="product__quantity"></div>
+                        <button class="product_btn btn"
+                                data-sb-id-or-vendor-code="09"
+                                data-sb-product-name="МУКА РЖАНАЯ ЦЕЛЬНОСМОЛОТАЯ 'ГАРНЕЦ' 500ГР"
+                                data-sb-product-price="2.65"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="/img/flour/9.jpg">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer_inner">
+                    <div class="footer_info">
+                        <a href="/index.html"><img src="/img/vegan-logo_footer.png" alt="logo"></a>
+                        <p> ИП Спиридонов Андрей Андреевич</br>
+                            УНП 192770026</br>
+                            Свидетельство о государственной регистрации выдано Минским горисполкомом 6 февраля 2017 г.</br>
+                            Юридический адрес: РБ, г. Минск</br>
+                            Ул. Притыцкого 92-59</br>
+                            Р/С BY58 ALFA 3013 2793 9400 1027 0000</br>
+                            ЗАО "АЛЬФА-БАНК"</br>
+                            Юридический адрес: Ул. Сурганова, 43-47, 220013 Минск</p>
+                    </div>
+                    <div class="footer-block">
+                       <nav class="footer_menu">
+                            <h4>Меню сайта:</h4>
+                            <a class="footer_menu-link" href="/products.html">Товары</a></li>
+                            <a class="footer_menu-link" href="/delivery.html">Доставка и оплата</a>
+                            <a class="footer_menu-link" href="/contacts.html">Контакты</a>
+                        </nav>
+                        <div class="footer_social">
+                            <div class="footer_social-link">
+                                <h4>Мы в сети:</h4>
+                                <p>Email: <a class="footer_social-email" href="mailto:oyasim@email.com">oyasim@email.com</a></p>
+                            </div>
+                            <div class="footer_social-list">
+                                <a class="facebook" href="https://www.facebook.com/" target="_blank"><img src="/img/facebook.png"></a>
+                                <a class="twitter" href="https://twitter.com/" target="_blank"><img src="/img/twitter.png"></a>
+                                <a class="instagram" href="https://www.instagram.com/" target="_blank"><img src="/img/instagram.png"></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </footer> 
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/library/smartbasket/js/smartbasket.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/product.js"></script>
+
+</body>
+</html>
