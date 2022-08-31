@@ -95,43 +95,4 @@ $(function () {
 });
 // Бургер меню
 
-// Поиск 
-// function search () {
-//     let searchInput = document.querySelector('#search');
-//     if (!searchInput) return
-//     searchInput.oninput = function() {
-//         let val = this.value.trim();
-//         let productsItems = document.querySelectorAll('.products-grid li');
-        
-//         if (val != ''){
-//             productsItems.forEach(function(elem){
-//                 if (elem.innerText.search(val) == -1) {
-//                     elem.classList.add('turn-off');
-//                     elem.innerHTML = elem.innerText;
-//                 }
-//                 else {
-//                     elem.classList.remove('turn-off');
-//                     let line = elem.innerText;
-//                     elem.innerHTML = insertMark(line, elem.innerText.search(val), val.length);
-//                 }
-//             });
-//         }
-//         else {
-//             productsItems.forEach(function(elem){
-//                 elem.classList.remove('turn-off');
-//                 elem.innerHTML = elem.innerText;
-//                 });
-//         }
-//     }
-    
-//     function insertMark(str,pos,len) {
-//         return str.slice(0, pos) + '<mark>' + str.slice(pos, pos+len) + '</mark>' + str.slice(pos+len);
-//     }
-// }
-
-// $(document).ready(function(){
-//     search()
-// })
-// // Поиск 
-
 

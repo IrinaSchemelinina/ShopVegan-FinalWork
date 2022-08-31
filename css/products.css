@@ -50,9 +50,9 @@
     border: none;
 }
 
-.pagination_products .image_switch img {
-    width: 100%;
-    height: auto;
+.pagination_products .image_switch_img img {
+    width: auto;
+    height: 100%;
 }
 
 .content_page h2 {
