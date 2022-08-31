@@ -1,38 +1,50 @@
-const results = document.getElementById('results');
+const productItemTemplate = (productData) => {
+    const {id, image, title, cost} = productData
+    return `
+        <li class="products-grid_item">
+            <article class="product">
+                <div class="image_switch_img">
+                    <a href="#popup_products${id}" class="popup_link">
+                        <img src="${image}" alt="${title}">
+                    </a>
+                </div>
+                <h3 class="product_title">
+                    <a href="#popup_products${id}" class="popup_link">${productData.title}</a>
+                </h3>
+                <div class="product_price">
+                    <span class="product-price_current">${cost}р.</span>
+                </div>
 
-function generateCards(productData) {
-    const cards = [];
-    for (let i = 0; i < productData.length; i++) {
-        cards.push (`
-            <li class="products-grid_item">
-                <article class="product">
-                    <div class="image_switch_img">
-                        <a href="#" class="popup_link">
-                            <img src="${productData[i].image}" alt="${productData[i].title}">
-                        </a>
-                    </div>
-                    <h3 class="product_title">
-                        <a href="#popup_sweets1" class="popup_link">${productData[i].title}</a>
-                    </h3>
-                    <div class="product_price">
-                        <span class="product-price_current">${productData[i].cost}р.</span>
-                    </div>
-        
-                    <div class="product__quantity"></div>
-        
-                    <button class="product_btn btn" data-sb-id-or-vendor-code="19"
-                        data-sb-product-name="${productData[i].title}"
-                        data-sb-product-price="${productData[i].cost}р." data-sb-product-quantity="1"
-                        data-sb-product-img="${productData[i].image}">Добавить в корзину</button>
-                </article>
-            </li>
-        `)
-    }
-    return cards
+                <div class="product__quantity"></div>
+
+                <button class="product_btn btn"
+                    data-sb-id-or-vendor-code="${id}"
+                    data-sb-product-name="${title}"
+                    data-sb-product-price="${cost}"
+                    data-sb-product-quantity="1"
+                    data-sb-product-img="${image}"
+                >
+                    Добавить в корзину
+                </button>
+            </article>
+        </li>
+    `
 }
 
-const cardsArr = generateCards(productData)
-results.innerHTML = cardsArr.join('')
+function generateCards (products) {
+    return products.map(item => productItemTemplate(item))
+}
+
+function generateProductList (productData) {
+    const results = document.getElementById('results');
+
+    if (!results) return
+
+    const cardsArr = generateCards(productData)
+    results.innerHTML = cardsArr.join('')
+}
+
+generateProductList(productData)
 
 //Поиск
 
@@ -60,6 +72,5 @@ function filterSearch() {
         }
     })
 
-    const newFilteredCardsHTML = generateCards(filteredProductData)
-    results.innerHTML = newFilteredCardsHTML.join('');
+    generateProductList(filteredProductData)
 }
